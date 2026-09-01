@@ -4,6 +4,15 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-01 — Published Competitor Ledger artifact, wired into daily routine
+
+Published a Claude Artifact (`overall/research/ARTIFACT.md` has the URL) as a
+human-readable, always-current view of the daily competitor research — a running log,
+newest entry first, instead of requiring a `git pull` to read a markdown file. Updated
+the "VinceCam daily competitor research" routine to read that URL, append each night's
+entry to the artifact (via the Artifact tool's read-then-publish-to-same-URL pattern),
+in addition to its existing `overall/research/*.md` file + `LOG.md` line + git push.
+
 ## 2026-09-01 — Filled in overall/BASE_IDEA.md with full canonical spec
 
 Replaced the placeholder with the full "Camvince — Current Canonical Product Idea"
