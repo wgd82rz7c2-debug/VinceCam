@@ -4,6 +4,19 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-01 — Filled in overall/BASE_IDEA.md with full canonical spec
+
+Replaced the placeholder with the full "Camvince — Current Canonical Product Idea"
+document (career decision-intelligence platform, 4-dimension profile, 3-stage
+career→employer→location flow, CareerExplorer competitive analysis, scoring formulas,
+business model, contradiction audit). Updated `UNDERSTANDING.md` to summarize it and map
+the six `src/` modules to the relevant spec sections.
+
+**Flagged, not resolved:** the spec consistently names the product "Camvince" while the
+project/repo is "VinceCam" — noted in `UNDERSTANDING.md` open questions, not renamed.
+
+**Next:** resolve the naming question; start implementation stack decisions.
+
 ## 2026-09-01 — Added overall/ for the base idea
 
 Created `overall/BASE_IDEA.md` as the source-of-truth concept doc, sitting alongside
