@@ -1,0 +1,37 @@
+# Work log
+
+Newest entry at the top. Short entries: what changed, what it revealed, what's next.
+
+---
+
+## 2026-09-01 — Added overall/ for the base idea
+
+Created `overall/BASE_IDEA.md` as the source-of-truth concept doc, sitting alongside
+`src/` rather than inside it (it's not application code). Intent: once filled in, a
+validation agent checks each module's supporting info against this file for drift.
+Content is still TBD — placeholder only.
+
+**Next:** Fill in `overall/BASE_IDEA.md` with what VinceCam actually is, then scope the
+validation agent (what "supporting info" means per module, how it runs, how drift is
+reported).
+
+## 2026-09-01 — Removed unused scaffold folders
+
+Removed `docs/`, `files/`, `scratch/` — all empty, not needed. Updated `CLAUDE.md`'s
+layout table and dropped the working agreement that referenced them.
+
+## 2026-09-01 — Module layout added under src/
+
+Created six module folders under `src/`: `resume-extract/`, `preferences/`,
+`enjoyment/`, `trajectory/`, `scoring-engine/`, `job-logic/`. Updated
+`UNDERSTANDING.md`'s component table to match. All folders are currently empty.
+
+**Next:** Fill in what each module actually owns and start implementing, beginning
+wherever the data pipeline naturally starts (likely `resume-extract/`).
+
+## 2026-09-01 — Project created
+
+Scaffolded `~/projects/VinceCam` with `src/`, `docs/`, `files/`, `scratch/`, plus
+`CLAUDE.md`, `UNDERSTANDING.md`, `DECISIONS.md`, and this log.
+
+**Next:** Define what VinceCam actually is and fill in `UNDERSTANDING.md`.
