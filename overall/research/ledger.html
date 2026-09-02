@@ -1,0 +1,386 @@
+<title>Competitor Ledger</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --paper: #f5f6f1;
+    --paper-raised: #ebece5;
+    --paper-raised-2: #e2e3db;
+    --ink: #171a1f;
+    --ink-soft: #4c525b;
+    --ink-faint: #767c84;
+    --line: #d8dad1;
+    --accent: #a8672a;
+    --accent-ink: #6e4318;
+    --accent-soft: #ecdcc0;
+    --accent-soft-line: #d9bd8c;
+    --serif: 'Newsreader', ui-serif, Georgia, serif;
+    --sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #11141a;
+      --paper-raised: #1a1e26;
+      --paper-raised-2: #232833;
+      --ink: #e9e9e2;
+      --ink-soft: #a7adb5;
+      --ink-faint: #767e88;
+      --line: #2a303a;
+      --accent: #d99a4e;
+      --accent-ink: #f0c98c;
+      --accent-soft: #34281a;
+      --accent-soft-line: #4d3a22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #11141a;
+    --paper-raised: #1a1e26;
+    --paper-raised-2: #232833;
+    --ink: #e9e9e2;
+    --ink-soft: #a7adb5;
+    --ink-faint: #767e88;
+    --line: #2a303a;
+    --accent: #d99a4e;
+    --accent-ink: #f0c98c;
+    --accent-soft: #34281a;
+    --accent-soft-line: #4d3a22;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+
+  header.masthead {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .mark-glyph {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid var(--accent);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+  .mark-glyph svg { width: 17px; height: 17px; }
+  .mark-text {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    line-height: 1.4;
+  }
+  .mark-text strong {
+    display: block;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+
+  .schedule-chip {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+    text-align: right;
+    line-height: 1.6;
+  }
+  .schedule-chip .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 0.4em;
+  }
+  .schedule-chip a { color: var(--ink-soft); }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 5vw, 2.75rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 1.6rem 0 0.6rem;
+  }
+
+  .dek {
+    font-family: var(--sans);
+    font-size: 1.02rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 54ch;
+    margin: 0 0 1.75rem;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2.75rem;
+  }
+  .stat {
+    background: var(--paper-raised);
+    padding: 0.85rem 1rem;
+  }
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.3rem;
+  }
+  .stat-value {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-value.accent { color: var(--accent-ink); }
+  .stat a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--ink-faint); }
+  .stat a:hover { border-bottom-style: solid; }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .section-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .ledger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  details.entry {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper-raised);
+    overflow: hidden;
+  }
+  details.entry[open] { background: var(--paper); }
+
+  summary.entry-head {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 92px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+  }
+  summary.entry-head::-webkit-details-marker { display: none; }
+  summary.entry-head:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  .entry-date {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--ink-faint);
+    line-height: 1.35;
+  }
+  .entry-date .yr { display: block; opacity: 0.7; }
+
+  .entry-title {
+    font-family: var(--serif);
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  .entry-status {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 0.28em 0.6em;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .entry-status.pending {
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-soft-line);
+  }
+  .entry-status.filed {
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1px solid var(--line);
+  }
+
+  .chevron {
+    display: none;
+  }
+
+  .entry-body {
+    padding: 0 1.1rem 1.35rem;
+    border-top: 1px solid var(--line);
+    margin-top: -1px;
+  }
+  .entry-body > * + * { margin-top: 0.9rem; }
+  .entry-body p {
+    font-size: 0.94rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  .entry-body h3 {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 1.1rem 0 0.4rem;
+    font-weight: 600;
+  }
+  .entry-body ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+  .entry-body li + li { margin-top: 0.3rem; }
+  .entry-body a { color: var(--accent-ink); }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  footer p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--ink-faint);
+    line-height: 1.6;
+    margin: 0;
+  }
+  footer a { color: var(--ink-faint); }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="mark">
+      <span class="mark-glyph" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="9.5"/>
+          <path d="M15.2 8.8 12.9 12.9 8.8 15.2 11.1 11.1z" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
+      <span class="mark-text"><strong>Competitor Ledger</strong>VinceCam / Camvince project</span>
+    </div>
+    <div class="schedule-chip">
+      <span class="dot"></span>Daily · 12:00&nbsp;AM ET<br>
+      <a href="https://github.com/wgd82rz7c2-debug/VinceCam" target="_blank" rel="noopener">github.com/wgd82rz7c2-debug/VinceCam</a>
+    </div>
+  </header>
+
+  <h1>A running record of who else is solving this.</h1>
+  <p class="dek">Every night, an agent re-reads the canonical product spec and checks the ground it's standing on — who's building something similar, how they've built it, and where there's room to be different and more profitable. Newest entry first.</p>
+
+  <div class="stat-row">
+    <div class="stat">
+      <div class="stat-label">Entries filed</div>
+      <div class="stat-value">0</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Next run</div>
+      <div class="stat-value accent">Sep 2, 12:00 AM ET</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Reads from</div>
+      <div class="stat-value"><a href="https://github.com/wgd82rz7c2-debug/VinceCam/blob/main/overall/BASE_IDEA.md" target="_blank" rel="noopener">BASE_IDEA.md</a></div>
+    </div>
+  </div>
+
+  <div class="section-label">Entries</div>
+
+  <div class="ledger">
+    <!-- ENTRY-INSERTION-POINT: new <details class="entry"> blocks get inserted directly below this
+         comment, most recent first. Do not remove this comment. Do not edit or remove existing
+         entries below it — only ever prepend. Once the first real entry exists, delete the
+         "pending" placeholder entry immediately below. -->
+
+    <details class="entry" open>
+      <summary class="entry-head">
+        <span class="entry-date">Awaiting<span class="yr">first run</span></span>
+        <span class="entry-title">No entries yet — first run scheduled</span>
+        <span class="entry-status pending">Pending</span>
+      </summary>
+      <div class="entry-body">
+        <p>The routine hasn't fired yet. The first entry lands after the scheduled run above, once it has read the canonical spec in <code>overall/BASE_IDEA.md</code> and researched what else exists in the career-decision-intelligence space.</p>
+        <h3>Already on record in the spec</h3>
+        <ul>
+          <li><strong>CareerExplorer</strong> — named as the primary direct competitor at the career-assessment stage (psychometric matching, 1,500+ careers, sold to universities). The spec argues the differentiation has to come from what happens <em>after</em> career discovery.</li>
+          <li><strong>General-purpose AI</strong> (ChatGPT etc.) — flagged as the biggest substitute risk if the product doesn't out-grow a single conversation.</li>
+        </ul>
+        <h3>What each entry will cover</h3>
+        <ul>
+          <li>Competitors found, and how they implement matching or scoring</li>
+          <li>Differentiation opportunities against the current spec</li>
+          <li>Profitability angles</li>
+          <li>Open questions for the founder</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <footer>
+    <p>Written nightly by a scheduled Claude Code routine · full text of each entry also lives in<br><a href="https://github.com/wgd82rz7c2-debug/VinceCam/tree/main/overall/research" target="_blank" rel="noopener">overall/research/</a> in the repo</p>
+    <p>Readiness · Work Fit · Conditions · Trajectory</p>
+  </footer>
+
+</div>
