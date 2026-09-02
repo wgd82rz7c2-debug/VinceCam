@@ -4,6 +4,16 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-02 — Targeting Duquesne New Venture Challenge 2026-2027 cycle
+
+Researched and recorded the real DNVC timeline in `overall/DUQUESNE_TIMELINE.md`.
+Team entrant submissions opened 2026-09-01; Stage I (short description + 1-min video)
+due 2026-11-15. Duquesne affiliation confirmed already covered on the team (needed by
+Stage III, April 2027). This is now the driving deadline for near-term project work.
+
+**Next:** Resolve Camvince/VinceCam naming, then draft Stage I written description and
+video script from `overall/BASE_IDEA.md`.
+
 ## 2026-09-01 — Published Competitor Ledger artifact, wired into daily routine
 
 Published a Claude Artifact (`overall/research/ARTIFACT.md` has the URL) as a
