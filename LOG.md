@@ -4,6 +4,19 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-02 — First real competitor research entry (merged two passes)
+
+Daily research routine's first real find: `overall/research/2026-09-02-competitor-analysis.md`.
+Nine new competitors/adjacents logged (JobCannon, pymetrics, Eightfold AI, Prentus, Forage,
+RippleMatch, resume-parser APIs, ATS screening tools). Merged in a prior run's findings
+(pymetrics/Eightfold/Prentus/Forage) that had reached the live Competitor Ledger artifact but
+never got committed to git — no matching file/commit existed anywhere in history, so treated
+as an interrupted earlier run and folded into this entry rather than duplicated or dropped.
+Updated `overall/research/ledger.html` (now 1 entry filed) and republished the artifact.
+
+**Next:** consider whether the session-reliability gap (publish succeeded, commit never
+happened) needs investigating separately from the routine's own logic.
+
 ## 2026-09-02 — Drafted business plan skeleton
 
 Created `overall/pitch/BUSINESS_PLAN.md`, structured around DNVC's Stage II/III judging
