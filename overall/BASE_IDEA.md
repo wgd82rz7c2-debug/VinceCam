@@ -1,8 +1,8 @@
-# Camvince — Current Canonical Product Idea
+# VinceCam — Current Canonical Product Idea
 
 **Canonical current-state specification**  
 **Date:** September 1, 2026  
-**Purpose:** Capture the entire current Camvince concept in one internally consistent document, including the product, user profile, scoring logic, data model, data sources, company/location/posting layers, adaptable profile, business model, competitive differentiation, validation plan, and contradictions/deprecations.
+**Purpose:** Capture the entire current VinceCam concept in one internally consistent document, including the product, user profile, scoring logic, data model, data sources, company/location/posting layers, adaptable profile, business model, competitive differentiation, validation plan, and contradictions/deprecations.
 
 > Editable living document — the source of truth every module under `src/` (`resume-extract/`,
 > `preferences/`, `enjoyment/`, `trajectory/`, `scoring-engine/`, `job-logic/`) should trace back
@@ -14,16 +14,16 @@
 
 ## 0. Read This First — What Is Canonical
 
-This document is intended to be the **current source of truth for the Camvince idea as of September 1, 2026**.
+This document is intended to be the **current source of truth for the VinceCam idea as of September 1, 2026**.
 
-Several older Camvince files contain ideas that were correct when written but have since been changed. Those old files are useful as decision history, but they must **not override this specification** when they conflict with it.
+Several older VinceCam files contain ideas that were correct when written but have since been changed. Those old files are useful as decision history, but they must **not override this specification** when they conflict with it.
 
 ### Source-precedence rule
 
-When two Camvince artifacts disagree, use this order:
+When two VinceCam artifacts disagree, use this order:
 
-1. **This document — `Camvince_Current_Canonical_Idea_2026-09-01.md`**
-2. **`Camvince Matching Model Reworked - Scoring Detail.xlsx` — September 1, 2026**
+1. **This document — `VinceCam_Current_Canonical_Idea_2026-09-01.md`**
+2. **`VinceCam Matching Model Reworked - Scoring Detail.xlsx` — September 1, 2026**
 3. **`Role Database - Vincent.docx` — verified 24-career universe, deep source check August 22, 2026**
 4. **The current Expanded Agent Ready Business Plan** for product, market, workflow, career pages, company pages, retention, validation, and business-model concepts that do not conflict with items 1–3
 5. Older scoring configuration workbooks, flows, contradiction logs, stress tests, and prototypes as **historical/reference material only**
@@ -58,21 +58,21 @@ Those percentages are a **prototype configuration**, not a scientifically valida
 
 ### Contradiction status
 
-After applying the source-precedence rule above, **this document is internally consistent**. I found historical conflicts in older Camvince artifacts and explicitly resolve them in the contradiction-audit section near the end of this document.
+After applying the source-precedence rule above, **this document is internally consistent**. I found historical conflicts in older VinceCam artifacts and explicitly resolve them in the contradiction-audit section near the end of this document.
 
 That is different from claiming that every old file has already been physically rewritten. It has not. Old files should be treated as stale wherever this document marks a concept as deprecated.
 
 ### Competitive status
 
-Camvince has **significant overlap with CareerExplorer at the career-assessment and career-ranking stage**. It would not be sufficiently differentiated if the product stopped at:
+VinceCam has **significant overlap with CareerExplorer at the career-assessment and career-ranking stage**. It would not be sufficiently differentiated if the product stopped at:
 
 > profile/assessment → top careers → career information.
 
-The current Camvince architecture is meaningfully different **only because the product continues beyond career discovery** into:
+The current VinceCam architecture is meaningfully different **only because the product continues beyond career discovery** into:
 
 > current readiness → company × career comparison → location/office → specific opportunity → entry difficulty → career signal → specialized experience → career trajectory → skill gaps/next step → longitudinal profile updates from actual work experience.
 
-Based on CareerExplorer's current public product materials reviewed on September 1, 2026, I did **not** find evidence that CareerExplorer's core public product provides the same integrated company × role × location decision layer, person-relative employer entry-difficulty layer, employer-role specialized-experience model, or task-level longitudinal experience feedback loop envisioned for Camvince. CareerExplorer may have internal or unreleased capabilities that are not publicly documented, so Camvince should never claim knowledge of features that CareerExplorer does not publicly disclose.
+Based on CareerExplorer's current public product materials reviewed on September 1, 2026, I did **not** find evidence that CareerExplorer's core public product provides the same integrated company × role × location decision layer, person-relative employer entry-difficulty layer, employer-role specialized-experience model, or task-level longitudinal experience feedback loop envisioned for VinceCam. CareerExplorer may have internal or unreleased capabilities that are not publicly documented, so VinceCam should never claim knowledge of features that CareerExplorer does not publicly disclose.
 
 ---
 
@@ -87,7 +87,7 @@ College students can already find:
 
 The information problem is therefore **not simply that career information does not exist**.
 
-The more important problem Camvince is trying to solve is:
+The more important problem VinceCam is trying to solve is:
 
 > **Students have fragmented information but still struggle to turn it into an organized, personalized career decision.**
 
@@ -110,15 +110,15 @@ Typical questions include:
 - What should I do next to improve my options?
 - After I complete an internship and learn what I actually like, should my career ranking change?
 
-Camvince is designed to turn those questions into a **structured, repeatable, source-backed decision workflow**.
+VinceCam is designed to turn those questions into a **structured, repeatable, source-backed decision workflow**.
 
 ---
 
-# 2. What Camvince Is
+# 2. What VinceCam Is
 
 The strongest current description is:
 
-> **Camvince is a Career Decision Intelligence platform that helps early-career users decide what to do, where to do it, and what to do next as their experience evolves.**
+> **VinceCam is a Career Decision Intelligence platform that helps early-career users decide what to do, where to do it, and what to do next as their experience evolves.**
 
 A shorter competitive description is:
 
@@ -128,9 +128,9 @@ Another useful framing:
 
 - **O*NET helps describe what work is.**
 - **CareerExplorer helps identify careers that may fit a person.**
-- **Camvince is intended to help decide which career move makes sense now, which employer/location/opportunity makes sense within it, and what the next move should be.**
+- **VinceCam is intended to help decide which career move makes sense now, which employer/location/opportunity makes sense within it, and what the next move should be.**
 
-Camvince should not be marketed as simply:
+VinceCam should not be marketed as simply:
 
 - an AI career quiz,
 - a personality test,
@@ -145,23 +145,23 @@ The system combines several functions, but the product value is the **decision l
 
 ---
 
-# 3. What Camvince Is Not
+# 3. What VinceCam Is Not
 
 ## 3.1 Not a job board
 
 LinkedIn and Handshake primarily help users **find and apply to opportunities**.
 
-Camvince should primarily help users answer:
+VinceCam should primarily help users answer:
 
 > Should I pursue this kind of opportunity in the first place?
 
-Job listings can appear in Camvince later, but job inventory is not the core moat.
+Job listings can appear in VinceCam later, but job inventory is not the core moat.
 
 ## 3.2 Not a generic career test
 
 CareerExplorer already has a sophisticated assessment, psychometric methodology, machine learning, labor-market data, and a large career library.
 
-Camvince should not try to win by saying:
+VinceCam should not try to win by saying:
 
 > "We also give you a list of careers."
 
@@ -171,7 +171,7 @@ Resume matching alone overweights what someone has done and can trap the person 
 
 A student may be highly qualified for audit while strongly disliking audit work.
 
-Camvince must keep:
+VinceCam must keep:
 
 - **capability/readiness**
 - **work enjoyment**
@@ -182,11 +182,11 @@ separate.
 
 ## 3.4 Not an exact probability engine
 
-Camvince should not claim:
+VinceCam should not claim:
 
 > "You have a 13.7% chance at Goldman Sachs."
 
-unless Camvince later obtains strong, representative applicant/offer data that actually support a probability model.
+unless VinceCam later obtains strong, representative applicant/offer data that actually support a probability model.
 
 Instead, it can use transparent categories such as:
 
@@ -218,7 +218,7 @@ Company reputation must be **role-specific when possible**.
 
 ## 3.6 Not a system that invents missing facts
 
-If Camvince does not know:
+If VinceCam does not know:
 
 - exact hours,
 - exact travel,
@@ -256,7 +256,7 @@ This is a **beachhead**, not a permanent market limit.
 
 ## 4.2 Expansion path
 
-Only after Camvince proves useful and repeatable should it expand to:
+Only after VinceCam proves useful and repeatable should it expand to:
 
 1. other business majors,
 2. recent business graduates / early-career workers,
@@ -268,7 +268,7 @@ The product should **not broaden merely to make the TAM slide larger**.
 
 ## 4.3 Highest-pain decision moments
 
-Camvince should appear when the user has a real decision:
+VinceCam should appear when the user has a real decision:
 
 - before choosing an internship track,
 - before recruiting season,
@@ -324,7 +324,7 @@ Main question:
 
 > **Where should I do this kind of work?**
 
-After the user chooses/saves a career, Camvince compares employers offering that career.
+After the user chooses/saves a career, VinceCam compares employers offering that career.
 
 A company should not enter Stage 1 just because the company is famous.
 
@@ -355,7 +355,7 @@ After the user actually does the work:
 
 > Internship / job / class / project → what did you learn? → profile update → re-ranking → next move.
 
-This makes Camvince an ongoing career-navigation product instead of a one-time test.
+This makes VinceCam an ongoing career-navigation product instead of a one-time test.
 
 ---
 
@@ -465,7 +465,7 @@ Trajectory is **probabilistic and evidence-based**, never a guarantee.
 
 # 7. Onboarding Philosophy
 
-Camvince should **show value before asking for every possible answer**.
+VinceCam should **show value before asking for every possible answer**.
 
 The intended progressive flow is:
 
@@ -647,7 +647,7 @@ Suppose the user has SAP experience.
 
 ### Job asks for generic ERP experience
 
-Camvince can use:
+VinceCam can use:
 
 > ERP Systems capability
 
@@ -657,7 +657,7 @@ Result:
 
 ### Job asks specifically for SAP
 
-Camvince uses:
+VinceCam uses:
 
 > exact SAP evidence + ERP-family evidence.
 
@@ -667,7 +667,7 @@ Result:
 
 ### Job asks specifically for Oracle
 
-Camvince must **not convert SAP into Oracle**.
+VinceCam must **not convert SAP into Oracle**.
 
 It can say:
 
@@ -706,7 +706,7 @@ It should say:
 
 > SQL = Unknown.
 
-If SQL is important for a decision, Camvince can ask a targeted question later.
+If SQL is important for a decision, VinceCam can ask a targeted question later.
 
 Missing evidence reduces **Coverage / Confidence**, not the person's assumed competence.
 
@@ -727,7 +727,7 @@ Both can be true.
 
 Example:
 
-> Camvince extracts graduation date = May 2027.
+> VinceCam extracts graduation date = May 2027.
 
 The UI can ask:
 
@@ -890,7 +890,7 @@ The model can eventually weight an attribute conceptually as:
 
 # 16. Dynamic Tie-Breaker Questions
 
-If the top careers are very close, Camvince should not force the user to answer another 50 generic questions.
+If the top careers are very close, VinceCam should not force the user to answer another 50 generic questions.
 
 Instead:
 
@@ -979,10 +979,10 @@ Future transition data can include:
 Potential data sources:
 
 - licensed workforce-transition data,
-- Camvince's own longitudinal user outcomes,
+- VinceCam's own longitudinal user outcomes,
 - later institution/employer outcomes data if appropriately licensed.
 
-Camvince should **not build its core commercial transition database by unauthorized LinkedIn scraping**.
+VinceCam should **not build its core commercial transition database by unauthorized LinkedIn scraping**.
 
 ---
 
@@ -1042,7 +1042,7 @@ Before an audit internship, a student may rank:
 3. Tax
 4. FP&A
 
-During/after the internship, Camvince learns:
+During/after the internship, VinceCam learns:
 
 - accounting readiness ↑
 - controls/testing readiness ↑
@@ -1062,7 +1062,7 @@ The next ranking might become:
 
 The important point is not the exact ranking.
 
-The important point is that Camvince can explain:
+The important point is that VinceCam can explain:
 
 > **what changed, which evidence changed it, and why the recommendation changed.**
 
@@ -1077,7 +1077,7 @@ A good rule:
 3. resume/behavioral inference,
 4. low-confidence personality/supporting inference.
 
-If actual experience suggests a meaningful preference change, Camvince can ask:
+If actual experience suggests a meaningful preference change, VinceCam can ask:
 
 > "You repeatedly marked recurring testing as one of your least-favorite activities. Should we update your preference for recurring compliance/testing work?"
 
@@ -1151,7 +1151,7 @@ It may refer to:
 - investments,
 - other finance.
 
-Camvince must map by **team and responsibilities**, not title alone.
+VinceCam must map by **team and responsibilities**, not title alone.
 
 ### "Business Analyst" is not one career
 
@@ -1876,7 +1876,7 @@ Once a user selects a career, the question changes.
 
 > **Where should I do this work?**
 
-Camvince should avoid a single "Company Score" that hides fundamentally different concepts.
+VinceCam should avoid a single "Company Score" that hides fundamentally different concepts.
 
 The target production dimensions are:
 
@@ -1930,7 +1930,7 @@ Potential evidence:
 
 How does the user's evidence compare with the opportunity requirements?
 
-Then Camvince can label:
+Then VinceCam can label:
 
 - Strong realistic target
 - Realistic
@@ -2016,7 +2016,7 @@ while another emphasizes:
 - Excel,
 - accounting close.
 
-Camvince should let the user compare those **experience footprints**.
+VinceCam should let the user compare those **experience footprints**.
 
 ---
 
@@ -2109,7 +2109,7 @@ BEA can provide regional economic data such as:
 - state/county statistics,
 - some MSA price-parity data.
 
-Camvince can derive a concentration-style metric.
+VinceCam can derive a concentration-style metric.
 
 Example:
 
@@ -2131,7 +2131,7 @@ If an industry is 10% of local activity but 5% nationally:
 
 That suggests the industry is roughly twice as concentrated locally as nationally.
 
-Camvince can translate the metric into understandable bands, but must preserve the raw source and methodology.
+VinceCam can translate the metric into understandable bands, but must preserve the raw source and methodology.
 
 ---
 
@@ -2191,7 +2191,7 @@ If the user selects FP&A and has:
 - unknown SQL,
 - limited business-partnering evidence,
 
-Camvince can produce:
+VinceCam can produce:
 
 ### Current strengths
 
@@ -2230,7 +2230,7 @@ This is where the older "Career Potential" concept can still be useful.
 
 # 47. Career Board / Persistent Decision System
 
-Camvince should remember what the user is considering.
+VinceCam should remember what the user is considering.
 
 Suggested stages:
 
@@ -2256,7 +2256,7 @@ The Career Board creates continuity between sessions.
 
 A one-time career assessment has weak retention.
 
-Camvince should become useful when either the **person** changes or the **market** changes.
+VinceCam should become useful when either the **person** changes or the **market** changes.
 
 ## Person changes
 
@@ -2292,7 +2292,7 @@ Do not send generic company news simply to increase engagement.
 
 # 49. Data Source Stack
 
-Camvince should use source-backed data rather than rely on generic AI memory.
+VinceCam should use source-backed data rather than rely on generic AI memory.
 
 ## 49.1 O*NET — career baseline
 
@@ -2311,13 +2311,13 @@ Use for:
 
 O*NET should feed the **raw career evidence layer**.
 
-Camvince then maps it to the universal Camvince schema.
+VinceCam then maps it to the universal VinceCam schema.
 
 Important:
 
-> O*NET is a source. The Camvince normalization/decision model is the product layer.
+> O*NET is a source. The VinceCam normalization/decision model is the product layer.
 
-Current O*NET 31.0 downloadable database is broadly available under CC BY 4.0, with attribution and modification disclosure requirements. O*NET Web Services are free for commercial/noncommercial use subject to account, attribution, licensing, and terms. For a commercial product, the downloadable database may be operationally simpler because modified/derived Camvince structures can be maintained locally under the database license, while Web Services have additional terms.
+Current O*NET 31.0 downloadable database is broadly available under CC BY 4.0, with attribution and modification disclosure requirements. O*NET Web Services are free for commercial/noncommercial use subject to account, attribution, licensing, and terms. For a commercial product, the downloadable database may be operationally simpler because modified/derived VinceCam structures can be maintained locally under the database license, while Web Services have additional terms.
 
 ## 49.2 CareerOneStop — current job/market layer
 
@@ -2394,7 +2394,7 @@ Repeated postings can help build company × role patterns.
 
 One posting should **not** define an entire employer-role experience.
 
-## 49.7 Camvince user data
+## 49.7 VinceCam user data
 
 Long-term proprietary source:
 
@@ -2426,7 +2426,7 @@ Do not build the business on unauthorized scraping.
 
 # 50. How Company × Role Profiles Should Be Derived
 
-Suppose Camvince collects 50 recent FP&A postings from Employer A.
+Suppose VinceCam collects 50 recent FP&A postings from Employer A.
 
 The system can parse recurring signals:
 
@@ -2438,7 +2438,7 @@ The system can parse recurring signals:
 
 Those percentages are illustrative only.
 
-Camvince can derive:
+VinceCam can derive:
 
 > Employer A FP&A appears to place relatively high emphasis on forecasting, data querying, and business partnering.
 
@@ -2473,7 +2473,7 @@ are much noisier than:
 - posting location,
 - tool listed.
 
-Camvince should treat subjective information as:
+VinceCam should treat subjective information as:
 
 - distributions,
 - ranges,
@@ -2482,7 +2482,7 @@ Camvince should treat subjective information as:
 
 not universal facts.
 
-Long term, Camvince's own structured post-internship/post-job survey may be more useful than a generic employer star rating because Camvince can ask:
+Long term, VinceCam's own structured post-internship/post-job survey may be more useful than a generic employer star rating because VinceCam can ask:
 
 > What career were you in?  
 > Which team/function?  
@@ -2521,7 +2521,7 @@ Safe architecture:
 - BEA,
 - official employer sources according to applicable terms,
 - licensed commercial data,
-- user-consented Camvince data.
+- user-consented VinceCam data.
 
 Avoid making unauthorized large-scale LinkedIn scraping or scraped employee-review data a core dependency.
 
@@ -2629,7 +2629,7 @@ CareerExplorer's FAQ also says it considers:
 
 Its matching system updates recommendations when the user supplies new relevant information.
 
-Therefore these claims are **not valid Camvince differentiators by themselves**:
+Therefore these claims are **not valid VinceCam differentiators by themselves**:
 
 - "We use work history."
 - "We use education."
@@ -2690,7 +2690,7 @@ CareerExplorer provides:
 
 CareerExplorer's public site also says users can explore the world of work and make a plan to get to a desired career.
 
-Therefore Camvince should **not** position CareerExplorer as:
+Therefore VinceCam should **not** position CareerExplorer as:
 
 > "just a personality test."
 
@@ -2712,7 +2712,7 @@ Its science documentation states:
 
 This is a real competitive strength.
 
-Camvince should not claim scientific superiority before Camvince has performed its own validation.
+VinceCam should not claim scientific superiority before VinceCam has performed its own validation.
 
 ---
 
@@ -2741,9 +2741,9 @@ This means:
 
 > "We sell to universities"
 
-is also **not a unique Camvince differentiator**.
+is also **not a unique VinceCam differentiator**.
 
-Camvince needs a different institutional value proposition.
+VinceCam needs a different institutional value proposition.
 
 ---
 
@@ -2757,7 +2757,7 @@ The acquisition announcement said CareerExplorer was used by **more than 10 mill
 
 The transaction terms were not disclosed.
 
-Therefore Camvince should not cite a made-up CareerExplorer revenue number in a pitch.
+Therefore VinceCam should not cite a made-up CareerExplorer revenue number in a pitch.
 
 The defensible takeaway is:
 
@@ -2765,9 +2765,9 @@ The defensible takeaway is:
 
 ---
 
-# 61. Where CareerExplorer and Camvince Overlap
+# 61. Where CareerExplorer and VinceCam Overlap
 
-| Capability | CareerExplorer | Camvince |
+| Capability | CareerExplorer | VinceCam |
 |---|---:|---:|
 | Interests | Yes | Yes |
 | Work preferences | Yes | Yes |
@@ -2787,11 +2787,11 @@ The defensible takeaway is:
 
 The overlap is substantial.
 
-That is why **career matching cannot be the entire Camvince product**.
+That is why **career matching cannot be the entire VinceCam product**.
 
 ---
 
-# 62. Where Camvince Must Be Different
+# 62. Where VinceCam Must Be Different
 
 The intended differentiation is not one feature.
 
@@ -2801,7 +2801,7 @@ It is a deeper workflow.
 
 CareerExplorer is broad.
 
-Camvince starts narrow and attempts to distinguish closely related business paths such as:
+VinceCam starts narrow and attempts to distinguish closely related business paths such as:
 
 - External Audit
 - Internal Audit
@@ -2817,7 +2817,7 @@ rather than stopping at a broad occupational label.
 
 ## 62.2 Explicit Readiness separated from Work Fit
 
-Camvince should show:
+VinceCam should show:
 
 > You may love this work.
 
@@ -2843,7 +2843,7 @@ This is a decision tradeoff.
 
 ## 62.3 Evidence Coverage
 
-Camvince explicitly tracks:
+VinceCam explicitly tracks:
 
 > how much of the recommendation is actually supported.
 
@@ -2853,13 +2853,13 @@ Unknown information should reduce confidence rather than silently become an aver
 
 Career selection is not the end.
 
-Camvince asks:
+VinceCam asks:
 
 > Which employer is best for this role for this person?
 
 ## 62.5 Role-specific employer signal
 
-Camvince separates:
+VinceCam separates:
 
 > Career Signal
 
@@ -2869,19 +2869,19 @@ from:
 
 ## 62.6 Entry Difficulty
 
-Camvince separately evaluates:
+VinceCam separately evaluates:
 
 > general competitiveness + the user's current readiness.
 
 ## 62.7 Specialized Experience
 
-Camvince attempts to estimate:
+VinceCam attempts to estimate:
 
 > what this employer-role combination will teach/build.
 
 ## 62.8 Location/office specificity
 
-Camvince moves:
+VinceCam moves:
 
 > career → employer → office → posting.
 
@@ -2891,7 +2891,7 @@ Current opportunity facts can replace broad assumptions.
 
 ## 62.10 Longitudinal task-level learning
 
-Camvince's profile is intended to learn from:
+VinceCam's profile is intended to learn from:
 
 > the actual tasks a user performed and liked/disliked during internships/jobs.
 
@@ -2908,7 +2908,7 @@ Career Board remembers:
 
 ## 62.12 Next-move engine
 
-Camvince should tell the user:
+VinceCam should tell the user:
 
 > What evidence/skill/experience would most improve the next decision?
 
@@ -2918,9 +2918,9 @@ rather than ending at:
 
 ---
 
-# 63. Competitive Conclusion — Is Camvince Actually Different?
+# 63. Competitive Conclusion — Is VinceCam Actually Different?
 
-## If Camvince is built as:
+## If VinceCam is built as:
 
 > Resume + preferences + personality → career ranking → career descriptions
 
@@ -2930,7 +2930,7 @@ then:
 
 That product sits directly in CareerExplorer's territory.
 
-## If Camvince is built as:
+## If VinceCam is built as:
 
 > living evidence-backed profile → career fit/readiness/conditions/trajectory → company × role decision → employer accessibility → career signal → specialized experience → location/office → posting-specific comparison → skill gaps → observed career paths → post-internship profile update → next move
 
@@ -2940,7 +2940,7 @@ then:
 
 The safest competitive language is:
 
-> **CareerExplorer is a powerful career-discovery and assessment platform. Camvince is being designed as a career decision-navigation system that continues from career choice into employer, location, opportunity, and next-move decisions using a persistent evidence-backed profile.**
+> **CareerExplorer is a powerful career-discovery and assessment platform. VinceCam is being designed as a career decision-navigation system that continues from career choice into employer, location, opportunity, and next-move decisions using a persistent evidence-backed profile.**
 
 Do not say:
 
@@ -2972,11 +2972,11 @@ It is not.
 
 A useful line:
 
-> **CareerExplorer helps users discover careers; Camvince is designed to help users navigate the sequence of decisions that follows—career, employer, location, opportunity, development, and next move—as their real experience changes.**
+> **CareerExplorer helps users discover careers; VinceCam is designed to help users navigate the sequence of decisions that follows—career, employer, location, opportunity, development, and next move—as their real experience changes.**
 
 Another:
 
-> **Camvince turns career discovery into an ongoing decision system.**
+> **VinceCam turns career discovery into an ongoing decision system.**
 
 ---
 
@@ -2994,9 +2994,9 @@ General AI can already:
 
 Therefore:
 
-> **If Camvince is only a chat interface, the company is weak.**
+> **If VinceCam is only a chat interface, the company is weak.**
 
-Camvince needs durable structure that a one-off conversation does not automatically maintain:
+VinceCam needs durable structure that a one-off conversation does not automatically maintain:
 
 - canonical user profile,
 - versioned profile history,
@@ -3011,7 +3011,7 @@ Camvince needs durable structure that a one-off conversation does not automatica
 - longitudinal outcomes,
 - reproducible recommendations.
 
-General AI can power pieces of Camvince, but the **structured data, workflow, history, and proprietary longitudinal dataset** are what can turn it into a company rather than a prompt.
+General AI can power pieces of VinceCam, but the **structured data, workflow, history, and proprietary longitudinal dataset** are what can turn it into a company rather than a prompt.
 
 ---
 
@@ -3026,7 +3026,7 @@ Strengths:
 - companies,
 - professional identity.
 
-Camvince differentiation:
+VinceCam differentiation:
 
 > decision support before and between applications.
 
@@ -3037,7 +3037,7 @@ Strengths:
 - campus job access,
 - university recruiting.
 
-Camvince differentiation:
+VinceCam differentiation:
 
 > deeper career understanding and company/path decisions.
 
@@ -3048,7 +3048,7 @@ Strengths:
 - employee reviews,
 - salary/culture information.
 
-Camvince differentiation:
+VinceCam differentiation:
 
 > role-specific structured decision model rather than generic employer ratings.
 
@@ -3066,7 +3066,7 @@ Weakness:
 - inconsistent,
 - not personalized in a persistent structured way.
 
-Camvince should use such sources carefully for qualitative discovery, not automatically treat anecdotes as facts.
+VinceCam should use such sources carefully for qualitative discovery, not automatically treat anecdotes as facts.
 
 ---
 
@@ -3125,7 +3125,7 @@ Potential B2B2C model:
 - custom branding,
 - outcome analytics.
 
-Because CareerExplorer already sells to universities, Camvince must sell a **deeper decision-management value proposition**, not merely "we also have an assessment."
+Because CareerExplorer already sells to universities, VinceCam must sell a **deeper decision-management value proposition**, not merely "we also have an assessment."
 
 ## Later revenue
 
@@ -3209,7 +3209,7 @@ That is significantly harder to recreate than a static assessment.
 3. Users save/reject/compare paths.
 4. Users pursue internships/jobs.
 5. They return with actual experience.
-6. Camvince learns task-level likes/dislikes and capabilities.
+6. VinceCam learns task-level likes/dislikes and capabilities.
 7. Profiles become more evidence-based.
 8. Career/company intelligence gains outcome evidence.
 9. Recommendations become better.
@@ -3223,11 +3223,11 @@ The most valuable proprietary data eventually may be:
 
 # 70. Trust Model
 
-Students should trust Camvince because the system can show:
+Students should trust VinceCam because the system can show:
 
 - where a fact came from,
 - how current it is,
-- how confident Camvince is,
+- how confident VinceCam is,
 - whether it is direct or inherited,
 - which user answer affected the result,
 - which evidence is missing,
@@ -3246,7 +3246,7 @@ The current business plan correctly treats key assumptions as unvalidated.
 ## We need to prove:
 
 1. Students experience real career-decision pain.
-2. Camvince is meaningfully better than a one-off AI conversation.
+2. VinceCam is meaningfully better than a one-off AI conversation.
 3. Users will complete enough profile information.
 4. Recommendations introduce useful options.
 5. Users save/compare decisions.
@@ -3262,11 +3262,11 @@ The current business plan correctly treats key assumptions as unvalidated.
 
 Existing project plan includes:
 
-### GTM-001 — Camvince vs general AI
+### GTM-001 — VinceCam vs general AI
 
 Give target students the same career decision through:
 
-- Camvince,
+- VinceCam,
 - a normal general AI tool.
 
 Then ask:
@@ -3279,7 +3279,7 @@ Then ask:
 
 Current placeholder success target:
 
-> 60% prefer Camvince.
+> 60% prefer VinceCam.
 
 This is a hypothesis, not proof.
 
@@ -3592,7 +3592,7 @@ are re-derived.
 
 ### Resolution
 
-The user can edit what they actually told Camvince.
+The user can edit what they actually told VinceCam.
 
 They do **not** edit scoring IDs or derived score values.
 
@@ -3774,7 +3774,7 @@ Never position against a straw-man competitor.
 
 ### Incorrect claim
 
-CareerExplorer is static; Camvince updates.
+CareerExplorer is static; VinceCam updates.
 
 ### Verified reality
 
@@ -3782,7 +3782,7 @@ CareerExplorer says recommendations update when users provide new relevant infor
 
 ### Resolution
 
-Camvince's differentiation must be more specific:
+VinceCam's differentiation must be more specific:
 
 > **actual task-level work experience + readiness changes + company/opportunity decision history + longitudinal navigation**.
 
@@ -3855,7 +3855,7 @@ The following should be treated as current unless explicitly changed later.
 
 - CareerExplorer is a major direct competitor at Stage 1.
 - General-purpose AI is the biggest substitute threat.
-- Camvince must win through structured longitudinal navigation beyond career matching.
+- VinceCam must win through structured longitudinal navigation beyond career matching.
 
 ---
 
@@ -3863,15 +3863,15 @@ The following should be treated as current unless explicitly changed later.
 
 ## "Why isn't this CareerExplorer?"
 
-> CareerExplorer is already a strong career assessment and discovery platform. Camvince overlaps at the initial career-matching stage, but the intended product continues into current readiness, company × role comparison, entry difficulty, career signal, specialized experience, city/office context, exact posting comparison, skill gaps, observed career transitions, and a living profile that learns from real internship/job activity. If Camvince stopped at top career matches, the differentiation would not be enough.
+> CareerExplorer is already a strong career assessment and discovery platform. VinceCam overlaps at the initial career-matching stage, but the intended product continues into current readiness, company × role comparison, entry difficulty, career signal, specialized experience, city/office context, exact posting comparison, skill gaps, observed career transitions, and a living profile that learns from real internship/job activity. If VinceCam stopped at top career matches, the differentiation would not be enough.
 
 ## "Why can't ChatGPT do this?"
 
-> ChatGPT can explain careers and personalize one conversation. Camvince's value is the persistent structured system: canonical profile, version history, source-backed career/company database, standardized scoring, Career Board, data freshness, company/location/posting hierarchy, longitudinal outcomes, and reproducible decisions. AI can power Camvince, but it is not the whole product.
+> ChatGPT can explain careers and personalize one conversation. VinceCam's value is the persistent structured system: canonical profile, version history, source-backed career/company database, standardized scoring, Career Board, data freshness, company/location/posting hierarchy, longitudinal outcomes, and reproducible decisions. AI can power VinceCam, but it is not the whole product.
 
 ## "Where does the career data come from?"
 
-> O*NET and BLS for career/labor foundations; CareerOneStop for current job, training, wage, and labor-market data; BEA for regional economic context; employer pages and actual postings for employer/location-specific facts; later licensed workforce-transition data and Camvince's own user outcome data.
+> O*NET and BLS for career/labor foundations; CareerOneStop for current job, training, wage, and labor-market data; BEA for regional economic context; employer pages and actual postings for employer/location-specific facts; later licensed workforce-transition data and VinceCam's own user outcome data.
 
 ## "How do you know the rankings are correct?"
 
@@ -3915,7 +3915,7 @@ Avoid:
 
 Prefer:
 
-> **Camvince is a Career Decision Intelligence platform for students and early-career professionals. It builds a living profile from what you've done, what you actually enjoy, the conditions you want, and where you want your career to go. It first helps you choose a career, then helps you compare where to do it, how realistic each opportunity is, what experience it will build, and what move to make next. The profile updates as your real experience changes.**
+> **VinceCam is a Career Decision Intelligence platform for students and early-career professionals. It builds a living profile from what you've done, what you actually enjoy, the conditions you want, and where you want your career to go. It first helps you choose a career, then helps you compare where to do it, how realistic each opportunity is, what experience it will build, and what move to make next. The profile updates as your real experience changes.**
 
 Short form:
 
@@ -3983,7 +3983,7 @@ Skills / experience / training / recruiting actions
     ↓
 User completes internship / class / job / project
     ↓
-Camvince asks what changed
+VinceCam asks what changed
     ↓
 New capabilities + actual task likes/dislikes + new goals
     ↓
@@ -4033,7 +4033,7 @@ toward:
 
 ### Confirmed overlap
 
-Camvince and CareerExplorer both involve:
+VinceCam and CareerExplorer both involve:
 
 - personal profiles,
 - career matching,
@@ -4043,9 +4043,9 @@ Camvince and CareerExplorer both involve:
 - career information,
 - recommendation updates.
 
-### Confirmed differentiation in the **current Camvince specification**
+### Confirmed differentiation in the **current VinceCam specification**
 
-Camvince's planned core extends into:
+VinceCam's planned core extends into:
 
 - explicit evidence-based Readiness,
 - Evidence Coverage,
@@ -4067,7 +4067,7 @@ Based on CareerExplorer's official public materials reviewed for this document, 
 
 The differentiation exists **in the architecture**.
 
-It will only become a defensible market difference if Camvince actually builds and validates the post-career-discovery layers.
+It will only become a defensible market difference if VinceCam actually builds and validates the post-career-discovery layers.
 
 A demo that only shows:
 
@@ -4085,15 +4085,15 @@ will tell a substantially different story.
 
 # 85. Source Notes
 
-## Internal Camvince sources reviewed
+## Internal VinceCam sources reviewed
 
-- `Camvince Matching Model Reworked - Scoring Detail.xlsx` — latest September 1 scoring/data-pull specification
-- `Camvince Matching Model Reworked.xlsx`
-- `Camvince_Stress_Test_Expanded_Resume_Profile.xlsx`
+- `VinceCam Matching Model Reworked - Scoring Detail.xlsx` — latest September 1 scoring/data-pull specification
+- `VinceCam Matching Model Reworked.xlsx`
+- `VinceCam_Stress_Test_Expanded_Resume_Profile.xlsx`
 - `Role Database - Vincent.docx` — verified 24-role universe, deep source check August 22, 2026
-- `Camvince Expanded Agent Ready Business Plan.xlsx`
-- `Camvince — Scoring Config & Website API.xlsx` — older scoring architecture retained for historical comparison
-- `Camvince — Contradiction Control Center.xlsx` — used to identify older known scoring/profile/data-contract conflicts
+- `VinceCam Expanded Agent Ready Business Plan.xlsx`
+- `VinceCam — Scoring Config & Website API.xlsx` — older scoring architecture retained for historical comparison
+- `VinceCam — Contradiction Control Center.xlsx` — used to identify older known scoring/profile/data-contract conflicts
 
 ## CareerExplorer official sources reviewed
 
@@ -4147,7 +4147,7 @@ The announcement reported 10M+ annual users at the time and did not disclose tra
 
 # 86. Final Source-of-Truth Statement
 
-As of **September 1, 2026**, the intended Camvince product is:
+As of **September 1, 2026**, the intended VinceCam product is:
 
 > **A persistent, source-backed Career Decision Intelligence platform that builds a living profile of a user's current capabilities, actual work preferences, desired job conditions, and long-term trajectory; uses that profile first to rank careers, then to compare employers, locations, and specific opportunities; keeps current readiness, entry difficulty, career signal, specialized experience, conditions, and trajectory conceptually separate; tracks uncertainty and source freshness; remembers the user's decisions over time; and updates recommendations after real education and work experience so the product can answer not only "What career fits me?" but "What should I do, where should I do it, and what should I do next?"**
 

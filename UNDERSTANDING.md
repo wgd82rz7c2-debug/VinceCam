@@ -7,20 +7,20 @@
 
 ## What the system does
 
-**Camvince** (project folder is `VinceCam` — naming not yet reconciled, see note below) is
-a Career Decision Intelligence platform for early-career users, currently beachheading on
-US college business students. It's explicitly *not* a one-shot career quiz or resume-to-job
-matcher: it builds a living, versioned profile from resume evidence, stated preferences,
-work-activity enjoyment, and career-trajectory priorities, then walks the user through four
-stages — career ranking, employer comparison, location/office/posting fit, and "what should
-I do next" — updating the profile as real internship/job experience comes in.
+**VinceCam** is a Career Decision Intelligence platform for early-career users, currently
+beachheading on US college business students. It's explicitly *not* a one-shot career quiz
+or resume-to-job matcher: it builds a living, versioned profile from resume evidence, stated
+preferences, work-activity enjoyment, and career-trajectory priorities, then walks the user
+through four stages — career ranking, employer comparison, location/office/posting fit, and
+"what should I do next" — updating the profile as real internship/job experience comes in.
 
 Full spec, competitive analysis (vs. CareerExplorer, general AI, LinkedIn, etc.), scoring
 formulas, data sources, and business model: see [`overall/BASE_IDEA.md`](overall/BASE_IDEA.md)
 — that is the canonical source of truth; this section is a summary only.
 
-**Naming note:** the project directory and repo are `VinceCam`, but `overall/BASE_IDEA.md`
-consistently calls the product `Camvince`. Not yet reconciled — flag before renaming anything.
+**Target:** the 2026-2027 Duquesne New Venture Challenge — see
+[`overall/DUQUESNE_TIMELINE.md`](overall/DUQUESNE_TIMELINE.md). Stage I (short description +
+1-minute video) is due 2026-11-15.
 
 ## How it's built
 
@@ -52,7 +52,6 @@ _Where data lives, what shape it's in, what's persistent vs. ephemeral._
 
 ## Open questions
 
-- Resolve `VinceCam` vs `Camvince` naming.
 - What platform does it target (web app? mobile?) — not specified in `overall/BASE_IDEA.md`.
 - Implementation stack — not yet decided.
 - The 22 open design questions in `overall/BASE_IDEA.md` §77 (final scoring weights, MVP

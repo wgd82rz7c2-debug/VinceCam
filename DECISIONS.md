@@ -5,6 +5,20 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-02 — Product name is VinceCam, not Camvince
+
+**Decision:** The product name is "VinceCam" — matching the project directory and GitHub
+repo. `overall/BASE_IDEA.md` and `overall/research/ledger.html` (which called it
+"Camvince" throughout) were updated to match.
+
+**Why:** Needed one settled name before drafting Duquesne New Venture Challenge Stage I
+materials for judges. Founder chose VinceCam over Camvince when asked directly.
+
+**Reversible?** Yes, but costly — reverses a naming decision baked into 122 references
+across the canonical spec. Don't flip again without strong reason.
+
+---
+
 ## 2026-09-01 — Adopted full canonical spec as overall/BASE_IDEA.md
 
 **Decision:** The user-supplied "Camvince — Current Canonical Product Idea" document
@@ -15,10 +29,7 @@ rule, superseding older scoring formulas and design docs referenced within it (s
 §78 contradiction audit).
 
 **Reversible?** Yes — it's a living document meant to be edited in place going forward.
-
-**Open item, deliberately not resolved here:** the document names the product "Camvince"
-throughout; the project directory and GitHub repo are named "VinceCam". Left as-is pending
-an explicit decision from the founder on which name is canonical.
+(Naming later resolved to "VinceCam" — see 2026-09-02 entry above.)
 
 ---
 
