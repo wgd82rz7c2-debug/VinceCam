@@ -4,6 +4,16 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-02 — Resolved naming, drafted Stage I materials
+
+Founder chose "VinceCam" over "Camvince" — updated all 122 references in
+`overall/BASE_IDEA.md` and the Competitor Ledger. Drafted
+`overall/pitch/STAGE_I_DESCRIPTION.md` (short written description) and
+`overall/pitch/STAGE_I_VIDEO_SCRIPT.md` (1-minute video script) for DNVC Stage I.
+
+**Next:** Founder reviews/edits both drafts, registers on the DNVC entrant submission
+system, records the video, submits before 2026-11-15.
+
 ## 2026-09-02 — Targeting Duquesne New Venture Challenge 2026-2027 cycle
 
 Researched and recorded the real DNVC timeline in `overall/DUQUESNE_TIMELINE.md`.
