@@ -1,0 +1,30 @@
+# Camvince Competitor Challenge & Consensus Log Summary
+
+This document is a strategic competitive analysis framework for Camvince, last refreshed September 2, 2026. It functions as an adversarial working document rather than marketing material.
+
+## Core Purpose
+The document establishes rules for evaluating whether Camvince's emerging direction—"a closed-loop career-decision system"—represents genuine differentiation or merely repackages existing capabilities.
+
+## Key Competitive Landscape Findings
+
+**Tier 1 Direct Competitors (11 companies):** Products like CareerExplorer, Pathly, Trudy, and SkillDrift already offer combinations of personality assessment, resume analysis, career matching, roadmap generation, and dynamic skill rescoring. The document emphasizes that "resume + personality + career ranking" is now commodity functionality.
+
+**Enterprise Alternatives (3 companies):** Eightfold, Fuel50, and SeekOut demonstrate that "career digital twins" and skills-based mobility systems are established enterprise capabilities.
+
+**Job Reality & Experience Layer (7 companies):** Glassdoor, WorkTruth, and Canary dominate retrospective role insights. Parker Dewey and others provide actual experiential testing.
+
+## Proposed Differentiation: The Closed Loop
+
+The strongest remaining hypothesis involves measuring:
+- Professional state *before* a career decision
+- Actual tasks, skills gained, and preference changes *during/after* experience
+- The variance between forecast and reality
+- Aggregated outcomes by company × role × context
+
+## Critical Vulnerabilities Acknowledged
+
+The document lists substantial obstacles: cold-start data scarcity, self-report bias, potential general AI sufficiency, user dropout, and privacy concerns limiting institutional adoption.
+
+## Bottom Line
+
+"Camvince should not claim to invent career matching... The currently defensible direction is to become a career outcome calibration network."
