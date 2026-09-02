@@ -4,6 +4,17 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-02 — Drafted business plan skeleton
+
+Created `overall/pitch/BUSINESS_PLAN.md`, structured around DNVC's Stage II/III judging
+criteria and pulling from `overall/BASE_IDEA.md` + competitor research where content
+exists. Flagged real gaps inline rather than inventing numbers: market sizing, pricing/
+unit economics, financial projections, team bios, exit strategy point of view, and
+prototype timeline are all still open.
+
+**Next:** Founder fills in the flagged gaps, starting with whichever is most decision-
+blocking (likely business model pricing and team).
+
 ## 2026-09-02 — Resolved naming, drafted Stage I materials
 
 Founder chose "VinceCam" over "Camvince" — updated all 122 references in
