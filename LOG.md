@@ -4,6 +4,15 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-03 — Second competitor research entry: university-channel incumbents
+
+Daily research routine's second entry: `overall/research/2026-09-03-competitor-analysis.md`.
+Covered ground the Sept 2 pass hadn't: 12Twenty and Symplicity (business-school career-center
+incumbents, logistics not fit-scoring), Firsthand/Vault (employer rankings, a plausible Career
+Signal data source), O*NET's own free Interest Profiler, Traitify/Crosschq, Handshake's newer
+AI features (the sharpest adjacent threat found so far), ChangeBegins.ai, and Find Your Grind.
+Updated `overall/research/ledger.html` (now 2 entries filed) and republished the artifact.
+
 ## 2026-09-02 — First real competitor research entry (merged two passes)
 
 Daily research routine's first real find: `overall/research/2026-09-02-competitor-analysis.md`.
