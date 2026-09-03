@@ -11,6 +11,48 @@
 
 ---
 
+## 2026-09-03 — Eighth check: three new precedent citations, and for once two are legitimate
+
+Different pattern this time — no change to the 8 "highest threat" competitors (still
+AIPathForge through Decisio, same claims), but the precedent list gained three new
+citations: **DeBruce Foundation**, **NACE competency assessment**, and **"Accenture
+patent application."**
+
+**DeBruce Foundation — real, and a fair citation.** A Kansas City philanthropic
+organization; its free "Agile Work Profiler" career-strengths assessment has 500,000+
+completions and partners with state education departments. Legitimately supports the
+doc's "personality/values matching to careers" settled-territory claim — this category
+genuinely is commoditized, consistent with what this project's own research and
+`../../BASE_IDEA.md` already concede (§3.2, "not a generic career test").
+
+**NACE competency assessment — real, authoritative, and a fair citation.** NACE
+(National Association of Colleges and Employers) is the actual standard-setter for
+career-readiness competencies in US higher ed — its 8-competency framework and
+validated assessment tool (issued August 2024) is the most widely adopted in the
+field. Correctly cited as evidence that competency assessment is settled territory.
+
+**"Accenture patent application" — real patent exists, but the specific relevance is
+unclear.** Accenture does hold a "Technology Multi-Skilling Framework" patent
+(filed US/IN 2017, continuation 2024) — but it covers automated proficiency tracking
+for IT professionals' skills, not career-outcome prediction or the closed-loop
+mechanism this doc is arguing is settled. Citing a real patent as support for a claim
+it may not actually substantiate is a softer version of the AIPathForge problem
+(checks 4 and 6) — real entity, overstated relevance. Not fabricated, just unclear.
+
+**Also noted, no action needed:** "Divergence" from check 7 now appears as "Divergence
+Core" — likely the same unverifiable entity with a slightly different label, not a new
+name requiring separate verification.
+
+**Assessment:** this check is the first of eight where the doc's new additions lean
+mostly legitimate rather than fabricated. Doesn't change the bottom line — the 8
+"highest threat" list is unchanged and still carries the same unresolved problems
+(AIPathForge mischaracterized, Pathfinder Atlas and bare "Pathfinder" unverifiable,
+CareerForge AI wrong-audience) documented in checks 1-7 — but worth recording
+accurately rather than treating every update as equally suspect. The doc's reliability
+is inconsistent, not uniformly bad.
+
+---
+
 ## 2026-09-03 — Seventh check: two more names added to the precedent list, both unverifiable
 
 After five consecutive checks with no substantive change (pure WebFetch paraphrase
