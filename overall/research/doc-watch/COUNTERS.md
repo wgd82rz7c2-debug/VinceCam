@@ -11,6 +11,51 @@
 
 ---
 
+## 2026-09-03 — Seventh check: two more names added to the precedent list, both unverifiable
+
+After five consecutive checks with no substantive change (pure WebFetch paraphrase
+noise — see prior entries), the precedent-companies list gained two new names:
+**"Divergence"** and **"WorkFate."** Both checked.
+
+**WorkFate — does not exist.** No company by this name found anywhere. Fourth
+fabricated "generic-sounding career platform" name from this doc-watch, after
+WorkTruth, RoleReality, and CareerGauge.
+
+**"Divergence" — no matching entity found.** Search surfaces several unrelated
+organizations sharing fragments of the name: Divergence Academy (an AI/GRC education
+platform, unrelated to career matching), Diversio (workplace DEI analytics, unrelated),
+Diverge (a resume-link-click-tracking tool — genuinely different concept, not
+evidence-ladder/outcome-delta modeling), and Divergence Cloud Platform (neuroscience
+software, unrelated). Nothing matches a career-decision-intelligence product. Same
+generic-word-plus-specificity pattern as "Pathfinder Atlas" and the bare "Pathfinder."
+
+**Everything else in this check is identical to checks 3-6** (see prior entries) —
+same 8 "highest threat" competitors, same claims about each, same white-space
+hypothesis and kill test. Two real names also appeared in this pass without needing
+re-verification: **Prentus** (already verified real and relevant in this project's own
+`../2026-09-02-competitor-analysis.md`) and the **Federal Reserve Occupational Mobility
+Explorer** (already verified real, a data source not a competitor, in that same file) —
+good that the doc's precedent list is at least partially grounded in this project's own
+prior, correctly-verified research rather than being 100% invention.
+
+**Running tally across all seven checks:** of every uniquely-named entity this doc has
+introduced, a consistent ~30-40% turn out to be non-existent or unverifiable
+(WorkTruth, Canary-as-job-insights, Weitzman Career Pathway Engine, Rezna,
+CareerGauge, RoleReality, the bare "Pathfinder," Pathfinder Atlas as a specific claim,
+WorkFate, "Divergence"), most of the rest are real companies serving a different
+audience or overstating a real product's actual capabilities (AIPathForge, CareerForge
+AI, CareerScope, Fuel50/SeekOut/Eightfold), and a small number are genuinely relevant
+finds worth the founder's attention (Ariane, Advize, Prentus, Parker Dewey, Forage).
+This ratio has been stable across a week's worth of checks — it is not improving with
+more editing passes.
+
+**No change to the substantive recommendation:** don't redesign the closed-loop/
+evidence-ladder thesis based on this doc. Ariane remains the one competitor across
+seven checks that would actually change how the founder should think about
+positioning — see `ariane.company` and the check-3 entry below for detail.
+
+---
+
 ## 2026-09-02 — Fourth check: doc expanded to 8 threats, doubled down on AIPathForge, and baked prior fabrications into a "settled" list
 
 **This is the clearest signal yet that this doc's process, not just individual claims, is
