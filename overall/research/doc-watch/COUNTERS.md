@@ -11,6 +11,61 @@
 
 ---
 
+## 2026-09-02 — Second check: wording shifted, "Pathwise" appears, CareerExplorer dropped from example list
+
+**Caveat on confidence:** WebFetch doesn't return this doc's raw text — it runs the
+fetched content through a summarization model each time, per its own tool description.
+The baseline snapshot and this fetch are therefore two independent AI paraphrases of
+whatever the doc currently says, not two literal text dumps. Some of what changed below
+could be summarization variance rather than an actual edit to the doc. Flagging this
+explicitly rather than asserting false certainty that a human/agent made these specific
+changes.
+
+**What's different from the baseline:**
+- Section structure reworded: "Key Competitive Landscape Findings" → "Main Threat
+  Assessment"; "Core Purpose" reworded but same meaning.
+- The four example "Tier 1" competitors changed from **CareerExplorer, Pathly, Trudy,
+  SkillDrift** to **SkillDrift, Pathly, Trudy, and Pathwise** — CareerExplorer dropped,
+  "Pathwise" added.
+- New explicit line: "if the product's output can be recreated well by one conversation
+  [with general AI], it's a feature, not a company" — this is word-for-word the same
+  argument as `../../BASE_IDEA.md` §65 ("If VinceCam is only a chat interface, the
+  company is weak"). Convergent, not new.
+- SeekOut dropped from the enterprise-alternatives mention (Eightfold, Fuel50 only this
+  time); "Job Reality & Experience Layer" section (Glassdoor/WorkTruth/Canary/Parker
+  Dewey) isn't mentioned in this fetch at all — could mean it was removed from the doc,
+  or the summarizer just didn't surface it this pass. Not resolvable without raw text.
+
+**Counter on "Pathwise":** already investigated in this project's own prior verification
+pass (this conversation, before this doc-watch existed) — "Pathwise"/"PathWise AI" is not
+one company. At least 4-5 unrelated small products share the name (a Dribbble UI mockup,
+a corporate L&D/coaching consultancy at pathwise.io, a resume-to-roadmap tool at
+getpathwise.co, a CV-upload tool at aipathwise.com). None of them is confirmed to
+specifically own "dynamic rescoring + current-to-target career pathing" as this doc
+claims. If the doc is citing "Pathwise" as a specific, singular, credible threat, that
+claim doesn't hold up under the same scrutiny CareerExplorer, JobCannon, and Prentus
+survived. Recommend whoever maintains this doc name a specific, verifiable Pathwise
+product (with a URL) rather than the bare name, or drop it.
+
+**Counter on dropping CareerExplorer:** unclear why the doc's example set would drop its
+single most-verified, most-established direct competitor (deep psychometric validation,
+10M+ annual users, real acquisition history — see `../../BASE_IDEA.md` §55-61) in favor
+of a name that doesn't survive verification. If this was a deliberate edit, it weakens
+the doc's argument rather than strengthening it.
+
+**On the "career outcome calibration network" framing itself:** this is not a new
+argument — it's the same conclusion this project's own research already reached
+independently (`../2026-09-02-competitor-analysis.md`, Differentiation Opportunities #2:
+"the evidence-priority ladder is now a concrete, checkable difference... currently unique
+among everything found across two research passes"). Restating it under a new label
+("calibration network") doesn't change the underlying claim or its evidence. The doc's
+"Critical Vulnerabilities" (cold-start, self-report bias, general-AI sufficiency,
+dropout, privacy) remain the more useful contribution — they map directly onto
+`../../BASE_IDEA.md` §71's own unvalidated-assumptions list and deserve founder attention
+regardless of who's editing this doc.
+
+---
+
 ## 2026-09-02 — Initial baseline
 
 **What the doc claims:** "Tier 1 Direct Competitors (11 companies)" including CareerExplorer,
