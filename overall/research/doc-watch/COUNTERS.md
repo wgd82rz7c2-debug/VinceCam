@@ -11,6 +11,73 @@
 
 ---
 
+## 2026-09-02 — Fourth check: doc expanded to 8 threats, doubled down on AIPathForge, and baked prior fabrications into a "settled" list
+
+**This is the clearest signal yet that this doc's process, not just individual claims, is
+unreliable.** Three new findings, then the pattern underneath all of them.
+
+**New names verified:**
+- **CareerGauge — does not exist.** No matching company found anywhere.
+- **RoleReality — does not exist.** Third fabricated "job reality/reviews" platform name
+  after WorkTruth and the Canary mischaracterization (checks 1 and this one).
+- **A second, separate "Pathfinder"** (distinct from "Pathfinder Atlas," now a third
+  "Pathfinder"-branded entry after Pathwise) — claimed to build "four-year behavioral
+  profiles" with "divergence between stated preferences and actual behavior" and
+  "financial-outcome modeling." No such specific product found — only generic,
+  unrelated career-pathways tools (a Michigan state program, a JFF guide, a College
+  Board resource) share the word "Pathfinder." Same fabricate-specificity-onto-a-generic-
+  word pattern as Pathfinder Atlas and PathWise AI.
+- **Decisio — real, and the doc is honest about it this time.** A general AI
+  decision-making app (AHP method, used for job offers among many other decision types),
+  not labor-market-specific. The doc's own note correctly says it "does not appear to
+  aggregate career-role outcomes across users." Good example of the doc getting one
+  right — worth acknowledging, not just cataloging failures.
+- **Advize — real and legitimately relevant, though not on the evidence-ladder axis.**
+  University-focused, 10,000+ short alumni-interview video clips, founded by UCLA
+  Anderson MBA students, works with institutions on career learning + alumni engagement.
+  Genuine "job reality" competitor in the informational-interview sense — but it's
+  curated video content, not a structured personal evidence ladder or company×role×
+  location comparison. Real, but adjacent, not a direct architecture competitor.
+
+**AIPathForge — doc doubled down with MORE specific false claims, not fewer.** Last
+check I found AIPathForge's real product (ApplyIQ) does resume-to-job match/fit/gap
+scoring with an auto-apply filter — nothing about outcome modeling or longitudinal
+memory. This check, the doc didn't correct that; it added *more* specific claims:
+"longitudinal memory of goals, decisions, actions, outcomes, and lessons," "Learn/Improve
+steps compare expectations with actions against reality," "evaluates opportunity fit,
+trajectory, risk, and career value." Re-verified directly against AIPathForge's own
+site and independent reviews: still just match/fit/gap/concern scores and an apply
+filter. None of the newly-added claims are supported. The doc's own single "highest
+threat," the one its entire reversed conclusion hinges on, is still being
+mischaracterized — now more elaborately.
+
+**The accumulation problem — this is the real finding of this check.** The doc's
+"Settled Competitive Territory" section now lists a "Precedent companies" roster that
+includes, as established fact: Ikigai Career Quiz, Rezna, CareerScope, Pathwise,
+Weitzman Career Pathway Engine, Canary, WorkTruth, RoleReality — **every name this
+doc-watch has already verified as fabricated or fundamentally mischaracterized across
+checks 1, 3, and 4.** The doc isn't incorporating correction; each pass is building new,
+more specific claims on top of the previous pass's uncorrected errors. Confidence is
+increasing while accuracy is decreasing — the opposite of what "consensus log" or
+"adversarial review" should produce.
+
+**Net effect on the actual differentiation question:** unchanged from checks 1-3.
+Ariane remains the one real, relevant addition worth the founder's attention
+(`ariane.company`). Advize is real but adjacent. Everything else "highest threat" in
+this doc — 6 of 8 named competitors — is either non-existent or demonstrably
+mischaracterized. `../../BASE_IDEA.md` §62-64 and `../2026-09-02-competitor-analysis.md`
+remain the more rigorously verified version of this same argument.
+
+**Recommendation:** stop treating this doc's conclusions as evidence-based input to
+`BASE_IDEA.md` or the business plan without independent verification of every single
+named entity, every time — this check's own "Settled Competitive Territory" section is
+proof that verification doesn't carry forward between the doc's own passes. If this
+doc is being produced by another AI agent, that agent does not appear to be
+fact-checking its own prior output, and its confidence should be discounted
+accordingly, not weighted as consensus.
+
+---
+
 ## 2026-09-02 — Third check: doc reverses itself, names 5 new "highest threat" competitors, declares the closed-loop thesis dead
 
 **This is a major escalation.** The doc flipped from "the closed-loop framing is Camvince's
