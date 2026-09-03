@@ -11,6 +11,73 @@
 
 ---
 
+## 2026-09-02 — Third check: doc reverses itself, names 5 new "highest threat" competitors, declares the closed-loop thesis dead
+
+**This is a major escalation.** The doc flipped from "the closed-loop framing is Camvince's
+strongest defensible hypothesis" (checks 1-2) to **"the broad closed-loop thesis did NOT
+survive this review"** — a complete reversal, justified entirely by five brand-new
+"highest threat" competitors that supposedly already do exactly what the evidence-ladder/
+real-experience-override mechanism does. Verified all five. The reversal does not hold up.
+
+**AIPathForge — real company, but mischaracterized.** aipathforge.com is real; its actual
+live product (ApplyIQ) is resume-to-job keyword/fit scoring and application tracking for
+job seekers generally. The doc claims it does "outcome modeling, scenario comparison,
+comparing expectations/actions/outcomes" — nothing in the company's own public
+description supports that; its stated *future* vision mentions expanding toward "career
+intelligence" eventually, not a shipped capability today. The doc is citing a real
+company's aspirational roadmap language as if it were a current, proven threat.
+
+**Pathfinder Atlas — not a real single entity.** No company by this combined name exists.
+There's an unrelated "Pathfinder Software" career-development platform and several
+disconnected "Pathfinder Careers/Consulting" services sharing the generic word
+"Pathfinder" — same name-collision pattern already documented for "PathWise AI" and
+"Ikigai Career Quiz" earlier in this project's research.
+
+**CareerForge AI — real, but wrong audience entirely.** It explicitly targets
+professionals **aged 40-60** facing layoffs or AI job displacement, with 15-30 years of
+experience making a late-career pivot. This has nothing to do with VinceCam's beachhead
+(college business students, pre-hire). Its "post-transition outcome data" (2,500+
+documented transitions, real dollar figures) is real, but for a completely different
+population — same "real company, wrong customer" pattern as CareerScope (veterans) and
+Fuel50/SeekOut (enterprise-internal) from earlier checks.
+
+**RiseIQ — real, but early-access/pre-launch and the specific claim is unverified.**
+riseiq.ai exists; its public description is generic ("AI career co-pilot," strengths,
+skills, interview practice). Nothing found confirms the "living Career DNA... evolving
+through work experiences" capability the doc attributes to it. Citing an early-access
+product's unconfirmed feature as a "highest threat" is not a supportable claim yet.
+
+**Ariane — real, and this one is genuinely worth taking seriously.** ariane.company is a
+real, live, university-specific career navigation platform: CV analysis + RIASEC
+personality + **alumni-outcome data specific to each university** ("where people like me
+from my university actually go"). This is the most credible new find across every
+research pass in this project so far — it overlaps with Trajectory Fit and the
+university-channel business model hypothesis directly. It does not appear to do
+individual-evidence-ladder overrides (readiness/enjoyment updated by a specific user's
+own real work experience) or company×role×location comparison — its outcome data is
+cohort/alumni-based, not personal, longitudinal, before/after data. That's a real,
+specific distinction, not a dismissal — worth the founder actually looking at
+ariane.company directly rather than taking either the doc's framing or this counter on
+faith.
+
+**Net assessment of this check:** 1 of 5 "highest threat" competitors (Ariane) is a
+legitimate, serious new competitor. The other 4 are either non-existent (Pathfinder
+Atlas), mischaracterized beyond what's publicly verifiable (AIPathForge), wrong-audience
+(CareerForge AI), or an unconfirmed claim about a pre-launch product (RiseIQ). A
+conclusion this strong ("the thesis did not survive") built on evidence that's 80%
+unverifiable-as-stated does not itself survive scrutiny. The one real addition (Ariane)
+is worth a genuine look, but doesn't on its own justify abandoning the closed-loop/
+evidence-ladder differentiation — see `../2026-09-02-competitor-analysis.md` and
+`../../BASE_IDEA.md` §62-64, which remain the most rigorously checked version of this
+argument across three independent research passes plus this doc-watch.
+
+**Recommendation for the founder:** don't let a document that reverses its own
+conclusion based on majority-unverifiable evidence drive a redesign. Do look at Ariane
+specifically — it's the one name here that survived verification and is close enough to
+matter.
+
+---
+
 ## 2026-09-02 — Second check: wording shifted, "Pathwise" appears, CareerExplorer dropped from example list
 
 **Caveat on confidence:** WebFetch doesn't return this doc's raw text — it runs the
