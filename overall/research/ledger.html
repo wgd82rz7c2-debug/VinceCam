@@ -334,11 +334,11 @@
   <div class="stat-row">
     <div class="stat">
       <div class="stat-label">Entries filed</div>
-      <div class="stat-value">2</div>
+      <div class="stat-value">3</div>
     </div>
     <div class="stat">
       <div class="stat-label">Next run</div>
-      <div class="stat-value accent">Sep 4, 12:00 AM ET</div>
+      <div class="stat-value accent">Sep 5, 12:00 AM ET</div>
     </div>
     <div class="stat">
       <div class="stat-label">Reads from</div>
@@ -355,6 +355,30 @@
          "pending" placeholder entry immediately below. -->
 
     <details class="entry" open>
+      <summary class="entry-head">
+        <span class="entry-date">Sep 4<span class="yr">2026</span></span>
+        <span class="entry-title">Jobright &amp; Sonara: AI job copilots optimize applying, not deciding</span>
+        <span class="entry-status filed">Filed</span>
+      </summary>
+      <div class="entry-body">
+        <p>Turned to ground the first two passes hadn't covered: general-purpose AI job-search copilots for ordinary job seekers, plus a check on how commoditized resume parsing has gotten. <strong>Jobright.ai</strong> (0–100 "match score" from resume + preferences, $39.99/mo, $7.7M raised) and <strong>Sonara.ai</strong> (a "career fingerprint" of preferences/culture/trajectory, $23.95/4wk) are both real, funded products — but both exist to rank and auto-apply to postings, not to help someone decide whether they should want the role in the first place. Sonara's core loop is explicitly auto-apply "until you're hired," the structural opposite of VinceCam's eligibility-≠-fit separation (BASE_IDEA §34). Three passes in a row have now failed to find any competitor operating VinceCam's Company × Career × Location × Posting layer (§23, §37–45) — it remains the most consistently confirmed piece of open ground.</p>
+        <h3>Also found</h3>
+        <ul>
+          <li>Resume-parsing infrastructure (Affinda, Textkernel, RChilli, Sovren, MokaHR, Superparser) confirmed mature and cheap — roughly $0.04–$0.20 per resume self-serve. Sharpens the case that <code>src/resume-extract/</code> shouldn't compete on raw parsing accuracy.</li>
+          <li>Ideal, Phenom, SeekOut, hireEZ — enterprise recruiter-side "career trajectory" sourcing tools, same employer-paid/post-application category as Eightfold (already logged); not a new threat vector.</li>
+          <li>Career-Fit (UK) — small psychometric matching tool sold to employers filling vacancies; low overlap with VinceCam's beachhead, noted only for completeness.</li>
+        </ul>
+        <h3>Differentiation &amp; profitability, briefly</h3>
+        <ul>
+          <li>New pitch contrast alongside the CareerExplorer/Handshake lines: Jobright and Sonara help you apply faster; VinceCam helps you decide, before applying at all, whether the career/employer/location is right for you.</li>
+          <li>Concrete build-vs-buy call: license a commodity parser API for raw resume extraction and put engineering effort into the capability-mapping/evidence-ladder layer on top instead — flagged as an open question for the founder to decide and record in <code>DECISIONS.md</code>.</li>
+          <li>Two new B2C subscription price anchors ($5.95–$40/mo), both above plausible student willingness-to-pay — reinforces leaning on the university/career-center license for the beachhead and reserving direct-consumer pricing at this level for the post-graduation expansion audience.</li>
+        </ul>
+        <p><a href="https://github.com/wgd82rz7c2-debug/VinceCam/blob/main/overall/research/2026-09-04-competitor-analysis.md" target="_blank" rel="noopener">Full analysis →</a></p>
+      </div>
+    </details>
+
+    <details class="entry">
       <summary class="entry-head">
         <span class="entry-date">Sep 3<span class="yr">2026</span></span>
         <span class="entry-title">The university channel has incumbents: 12Twenty, Firsthand, Handshake AI</span>

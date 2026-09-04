@@ -4,6 +4,15 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-04 — Third competitor research entry: general AI job copilots vs. resume-parsing commoditization
+
+Daily research routine's third entry: `overall/research/2026-09-04-competitor-analysis.md`.
+Covered ground the prior two passes hadn't: consumer AI job-search copilots (Jobright.ai's
+0-100 match scoring, Sonara.ai's "career fingerprint" auto-apply loop) and confirmed the
+resume-parsing API market (Affinda/Textkernel/RChilli/Sovren/MokaHR/Superparser) is mature and
+cheap (~$0.04-0.20/resume) — sharpening a build-vs-buy call on `src/resume-extract/`. Updated
+`overall/research/ledger.html` (now 3 entries filed) and republished the artifact.
+
 ## 2026-09-03 — Second competitor research entry: university-channel incumbents
 
 Daily research routine's second entry: `overall/research/2026-09-03-competitor-analysis.md`.
