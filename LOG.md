@@ -4,6 +4,18 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-05 — Fourth competitor research entry: JOFI's occupation-level fit score vs. Welcome to the Jungle's values matching
+
+Daily research routine's fourth entry: `overall/research/2026-09-05-competitor-analysis.md`.
+Found JOFI Assessments (DoD-derived psychometric instrument, evidence-based job-fit score
+across all 923 O*NET occupations, sold to workforce boards/colleges/career coaches) — the
+closest match yet to VinceCam's Readiness + Work Fit pairing, but still occupation-level
+only with no company/location/posting layer or re-scoring from lived experience. Also found
+Welcome to the Jungle (formerly Otta, ~1.7M users) matching on skills + values + culture at
+the posting level. Five straight passes now confirm no competitor operates VinceCam's full
+Company × Career × Location × Posting layer. Updated `overall/research/ledger.html` (now 4
+entries filed) and republished the artifact.
+
 ## 2026-09-04 — Third competitor research entry: general AI job copilots vs. resume-parsing commoditization
 
 Daily research routine's third entry: `overall/research/2026-09-04-competitor-analysis.md`.
