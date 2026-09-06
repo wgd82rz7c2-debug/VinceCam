@@ -4,6 +4,25 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-06 — Fifth competitor research entry: Lightcast Career Coach and the apply-stage tools
+
+Daily research routine's fifth entry: `overall/research/2026-09-06-competitor-analysis.md`.
+Found Lightcast Career Coach (labor-market-data company Lightcast's occupation/degree-program
+fit assessment, deployed at 300+ colleges — the first genuine fit-scoring incumbent found in
+the university channel, vs. 12Twenty/Symplicity's pure logistics), plus Simplify.jobs and Teal
+HQ (AI job-search copilots with resume-match scores, already installed by VinceCam's own
+beachhead students today) and LinkedIn Career Explorer (free public skill-adjacency tool,
+further proof trajectory mapping alone has no moat). Updated `overall/research/ledger.html`
+(now 5 entries filed) but **could not republish the artifact** — the Artifact tool refused the
+publish over a version conflict and its suggested fixes (`read`, `force`) are both barred for
+this routine; see `DECISIONS.md` 2026-09-06 entry. The live artifact page is stale until a
+future run or a human republishes it from this file.
+
+**Next:** a human (or a future run once the conflict clears) should republish
+`overall/research/ledger.html` to the artifact URL in `overall/research/ARTIFACT.md`, checking
+first whether the artifact received an out-of-band edit that needs merging rather than
+overwriting.
+
 ## 2026-09-05 — Fourth competitor research entry: JOFI's occupation-level fit score vs. Welcome to the Jungle's values matching
 
 Daily research routine's fourth entry: `overall/research/2026-09-05-competitor-analysis.md`.
