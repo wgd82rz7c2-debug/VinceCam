@@ -4,6 +4,22 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-07 — Sixth competitor research entry: Truity's static personality report vs. MyPassion.AI
+
+Daily research routine's sixth entry: `overall/research/2026-09-07-competitor-analysis.md`.
+Found Truity's Career Personality Profiler (Big Five + RIASEC, $29 one-time report, 25M+ users
+at scale — validates a one-time-paid-report business model close to BASE_IDEA's "Career
+Blueprint" hypothesis) and MyPassion.AI (small bootstrapped competitor explicitly marketing a
+childhood-pattern-based enjoyment critique against static personality quizzes). Sixth straight
+day with no accounting/finance-specific fit-scoring competitor found. Updated
+`overall/research/ledger.html` (6 entries filed, including the 2026-09-06 entry that a prior
+run's publish conflict had left off the live page) but **could not republish the artifact** —
+same version-conflict refusal as 2026-09-06, whose only offered fix (the `read` action) is
+barred by `ARTIFACT.md` this run; see `DECISIONS.md`. The live artifact is now two entries
+behind the repo file.
+
+---
+
 ## 2026-09-06 — Fifth competitor research entry: Lightcast Career Coach and the apply-stage tools
 
 Daily research routine's fifth entry: `overall/research/2026-09-06-competitor-analysis.md`.

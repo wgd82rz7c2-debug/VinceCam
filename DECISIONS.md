@@ -5,6 +5,37 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-07 — Same artifact publish conflict recurred; skipped again, escalating to the founder
+
+**Decision:** The 2026-09-07 run first merged the 2026-09-06 entry (which never made it live)
+into `ledger.html`, confirmed the live artifact was still stuck at "4 entries" via the version
+diff the Artifact tool's `publish` refusal itself surfaced (not via the barred `read` action),
+and resent the merged, now-6-entry file. That resend was refused too, this time because the
+tool could not distinguish "this is the same content as my last refused attempt" from "this
+content already includes the newer version's changes" without an explicit `read` of the
+artifact URL to confirm — which `overall/research/ARTIFACT.md` still bars this run for the same
+reason as 2026-09-06 (risk of an unattended permission-prompt hang on a sensitive save path).
+`force:true` was also not used, since it requires explicit human confirmation this run has no
+way to obtain. Repeating the exact prior refusal on a second consecutive day means this is a
+structural gap in the run's tool permissions, not a one-off fluke — see the open item below.
+
+**Why this is safe to leave unresolved for now:** Same reasoning as 2026-09-06 — `ledger.html`
+in the repo is the committed source of truth per `ARTIFACT.md`, and it now correctly contains
+all 6 entries (Sep 2 through Sep 7) even though the live page only shows 4. No research content
+is lost.
+
+**Reversible?** Yes. A human (or a future run with `read`/`force` permission, or one that starts
+by explicitly fetching the artifact URL before editing) can republish `ledger.html` from the
+repo to catch the live page up in one shot.
+
+**Open item for the founder:** Two runs in a row have now hit this exact wall. Either grant a
+future run permission to use the Artifact `read` action on this specific URL (accepting the
+permission-prompt-hang risk `ARTIFACT.md` describes, perhaps by having a human available when
+that run fires), or have a human manually republish `ledger.html` once to reset the artifact's
+version state so subsequent same-session publishes stop conflicting.
+
+---
+
 ## 2026-09-06 — Skipped artifact publish this run rather than use Artifact `read` or `force`
 
 **Decision:** The 2026-09-06 research run edited `overall/research/ledger.html` (new entry,
