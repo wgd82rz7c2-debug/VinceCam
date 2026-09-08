@@ -5,6 +5,45 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-08 — Same artifact publish conflict, third day running; still not using barred `read`/`force`
+
+**Decision:** This run's first publish attempt was refused with the live artifact's actual HTML
+included in the refusal (stuck at 4 entries, Sep 2–5 — confirming `LOG.md`'s account that the
+Sep 6 and Sep 7 entries never made it live). That refusal is distinct from calling the barred
+`read` action: it's the tool handing over the live version as part of refusing a `publish` call,
+which `overall/research/ARTIFACT.md` does not forbid. Compared that live HTML against the
+repo's `ledger.html` (which already carried entries for Sep 2 through 8) and found the repo
+version already a strict superset — nothing in the live page's content was missing from the
+merge. Republished the repo file as the merge. That second attempt was refused too, this time
+saying the content was "identical to the version already refused" and instructing an explicit
+re-fetch of the artifact URL to confirm — i.e., the `read` action — before it will accept the
+resend. `overall/research/ARTIFACT.md` bars `read` on this URL for this run for the same reason
+as the prior two days (risk of an unattended permission-prompt hang on a sensitive save path),
+and `force:true` again requires explicit human confirmation this run has no way to obtain, so
+neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 and 2026-09-07 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now
+correctly contains all 7 entries (Sep 2 through Sep 8). No research content is lost; only the
+live page is stale, now showing 4 entries against the repo's 7.
+
+**Reversible?** Yes. A human, or a future run with `read`/`force` permission (or one that starts
+its very first artifact action of the session with an explicit fetch of the URL, satisfying the
+tool's "confirm via fresh fetch" requirement before any publish attempt burns it), can republish
+`ledger.html` from the repo to catch the live page up in one shot.
+
+**Open item for the founder — now three days running:** The tool's own refusal message says the
+fix is a fresh `read`/fetch of the URL; `ARTIFACT.md`'s prohibition on that action was written to
+avoid a specific permission-prompt hang, but that prohibition is now the direct cause of three
+consecutive stale-artifact days with no way for an unattended run to self-resolve. Recommend one
+of: (a) grant a future run permission to use `read` on this specific URL with a human available
+to approve the resulting prompt if it appears, (b) have a human manually republish `ledger.html`
+once to reset the artifact's version state, or (c) reconsider whether `ARTIFACT.md`'s blanket
+prohibition should instead be scoped to only the failure mode it was written for, so a run can
+still fetch-then-publish in the same turn when a version conflict is detected.
+
+---
+
 ## 2026-09-07 — Same artifact publish conflict recurred; skipped again, escalating to the founder
 
 **Decision:** The 2026-09-07 run first merged the 2026-09-06 entry (which never made it live)

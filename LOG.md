@@ -4,6 +4,20 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-08 — Seventh competitor research entry: Apt AI, Accountests, and seven-for-seven on the moat layers
+
+Daily research routine's seventh entry: `overall/research/2026-09-08-competitor-analysis.md`.
+Found Apt AI (freemium personality-quiz + bolted-on resume tools, closest yet to VinceCam's
+joint Readiness/Work-Fit pairing but still two separate features) and Accountests (first
+accounting-specific personality instrument found, but B2B employer-hiring-side, not a
+candidate-facing competitor), plus a cluster of ungated finance-career marketing quizzes and
+Indeed Career Scout (new AI career coach, same marketplace-optimization shape as Handshake AI
+and LinkedIn Career Explorer). Seventh straight day with no competitor found operating the
+Company × Career × Location × Posting layer or re-scoring from real post-experience feedback.
+Updated `overall/research/ledger.html` (now 7 entries filed) but **could not republish the
+artifact** — same version-conflict wall as 2026-09-06 and 2026-09-07, third day running; see
+`DECISIONS.md`. The live artifact is now three entries behind the repo file.
+
 ## 2026-09-07 — Sixth competitor research entry: Truity's static personality report vs. MyPassion.AI
 
 Daily research routine's sixth entry: `overall/research/2026-09-07-competitor-analysis.md`.
