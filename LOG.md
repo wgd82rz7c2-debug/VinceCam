@@ -4,6 +4,25 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-09 — Eighth competitor research entry: FindYou.io, Talentprise, and eight-for-eight on the moat layers
+
+Daily research routine's eighth entry: `overall/research/2026-09-09-competitor-analysis.md`.
+Found FindYou.io (adaptive Big Five/RIASEC/values psychometric test, $4/~$55 no-subscription
+pricing — a second precedent alongside Truity for one-time paid reports) and Talentprise
+(resume+preference profile matched to recruiter searches, candidates free, employers pay
+per-unlock — a new B2B monetization pattern), plus more AI job-search copilots (Careerflow,
+Huntr, Jobscan, Kickresume, Zippia) and psychometric quizzes (16Personalities Premium Career
+Suite, YouScience, PathSource, MyPlan.com), none combining resume evidence with enjoyment/
+trajectory. Eighth straight day with no competitor found scoring fit specifically within
+finance/accounting careers, operating a Company × Career × Location comparison layer, or
+re-scoring from real post-experience feedback — strong enough now that the research file
+recommends resolving the "prioritize Stage 2/3 vs. Stage 1 polish" question rather than
+re-raising it a sixth time. Updated `overall/research/ledger.html` (now 8 entries filed).
+**Artifact publish failed again** — same version-conflict wall as 2026-09-06 through 2026-09-08,
+fourth day running; see `DECISIONS.md`. The live artifact is now four entries behind the repo
+file. Sent a push notification to the founder about this recurring block, since daily re-logging
+alone hasn't produced action. No BASE_IDEA.md regression found; full document read this run.
+
 ## 2026-09-08 — Seventh competitor research entry: Apt AI, Accountests, and seven-for-seven on the moat layers
 
 Daily research routine's seventh entry: `overall/research/2026-09-08-competitor-analysis.md`.
