@@ -4,6 +4,25 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-10 — Ninth competitor research entry: ZipRecruiter's Phil, Talentpluto, and nine-for-nine on the moat layers
+
+Daily research routine's ninth entry: `overall/research/2026-09-10-competitor-analysis.md`.
+Found ZipRecruiter's Phil (conversational AI career advisor at large consumer scale, same
+preference-to-posting shape as Jobright/Sonara/Indeed Career Scout) and Talentpluto (a genuinely
+new pattern: a voice AI agent turning a 10-minute conversation into a profile queryable by other
+AI agents — raises a new open question about candidate-consented profile sharing with outside
+agents/employers), plus more B2B skills-assessment vendors (Testlify, WeCP, Vervoe, same category
+as Accountests) and one more enterprise internal-mobility name (TalentGuard). Ninth straight day
+with no competitor found scoring fit specifically within finance/accounting careers, operating a
+Company × Career × Location comparison layer, or re-scoring from real post-experience feedback —
+this entry stops re-arguing that evidence nightly and only flags that the founder's prioritization
+decision is still unrecorded. Updated `overall/research/ledger.html` (now 9 entries filed).
+**Artifact publish failed again** — same version-conflict wall as 2026-09-06 through 2026-09-09,
+fifth day running; see `DECISIONS.md`. The live artifact is now five entries behind the repo file.
+Did not send a second push notification since the founder was already notified about this exact,
+unresolved block on 2026-09-09 and nothing material has changed since. No BASE_IDEA.md regression
+found; full document read this run.
+
 ## 2026-09-09 — Eighth competitor research entry: FindYou.io, Talentprise, and eight-for-eight on the moat layers
 
 Daily research routine's eighth entry: `overall/research/2026-09-09-competitor-analysis.md`.
