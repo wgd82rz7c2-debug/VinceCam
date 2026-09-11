@@ -4,6 +4,28 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-11 — Tenth competitor research entry: Apuphi's feedback loop, FindSkill.ai's offer calculator, ten-for-ten on the moat layers
+
+Daily research routine's tenth entry: `overall/research/2026-09-11-competitor-analysis.md`.
+Found Apuphi (India; the first mechanism in ten nights that re-scores a profile from real
+third-party feedback — employer interview feedback, not internship task-level feedback — a
+partial precedent for the §19 re-scoring loop) and FindSkill.ai's Job Offer Comparison Tool
+(closest artifact yet to VinceCam's Stage 3 shape, but a static, non-profile-driven calculator;
+description unverified beyond search snippets since direct fetch was blocked by network policy).
+Also found Tsenta and CareerTakes.ai (more auto-apply/resume-matching copilots, same category as
+prior entries) and a material update — RippleMatch was acquired by JobGet on 2026-05-28. Tenth
+consecutive day with no competitor found scoring fit specifically within finance/accounting
+careers or operating a true profile-driven Company × Career × Location comparison layer.
+Recommended in the research file and ledger entry that the founder record a decision on the
+long-standing Stage 2/3-vs-Stage-1-polish prioritization question (raised five times since
+2026-09-05 without one) — did not decide it myself, since that is a founder-level product call,
+not something this routine has standing to resolve. Updated `overall/research/ledger.html` (now
+10 entries filed). **Artifact publish failed again** — same version-conflict wall as 2026-09-06
+through 2026-09-10, sixth day running; see `DECISIONS.md`. The live artifact is now six entries
+behind the repo file. Did not send a second push notification since the founder was already
+notified about this exact, unresolved block on 2026-09-09 and nothing material has changed
+since. No BASE_IDEA.md regression found; full document read this run.
+
 ## 2026-09-10 — Ninth competitor research entry: ZipRecruiter's Phil, Talentpluto, and nine-for-nine on the moat layers
 
 Daily research routine's ninth entry: `overall/research/2026-09-10-competitor-analysis.md`.
