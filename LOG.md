@@ -4,6 +4,32 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-12 — Eleventh competitor research entry: Extern's paid externships, CoreFactors' avoidance scoring, and a FindSkill.ai correction
+
+Daily research routine's eleventh entry: `overall/research/2026-09-12-competitor-analysis.md`.
+Found Extern (formerly Paragon One; YC-backed) selling paid, real-employer remote externships
+in finance and other business functions — a second, higher-fidelity live example (after Forage)
+of a company monetizing the "real task-level work exposure" step BASE_IDEA wants feeding
+VinceCam's profile, and a new build-vs-partner question (import structured externship outcomes
+as evidence, vs. waiting on VinceCam's own longitudinal base). Found CoreFactors' Career Path
+(B2B, updated April 2026), which scores Preference and Avoidance as two independent dimensions —
+the clearest external validation yet for BASE_IDEA §14's "strongly dislike" design choice, and a
+third B2B go-to-market lane (coaches) distinct from university licensing and Talentprise's
+per-unlock model. Found OnJob.io (live-ATS-fed match scoring naming the missing skill per
+listing) as a concrete implementation pattern for posting freshness (§25) and gap-naming output
+(§46), though same resume-keyword-match category as prior entries. Corrected the 2026-09-11 entry:
+direct verification found FindSkill.ai is a stateless one-shot template catalog with no login or
+persistent profile, not a near-miss on VinceCam's Stage 3 shape as framed yesterday — the
+underlying "no competitor operates the persistent Company × Career × Location layer" conclusion
+stands. Updated `overall/research/ledger.html` (now 11 entries filed). **Artifact publish failed
+again** — same version-conflict wall as 2026-09-06 through 2026-09-11, seventh day running; see
+`DECISIONS.md`. The live artifact is now seven entries behind the repo file. Did not send a
+second push notification since the founder was already notified about this exact, unresolved
+block on 2026-09-09 and nothing material has changed since. No BASE_IDEA.md regression found;
+full document read this run. Did not re-raise the Stage 2/3-vs-Stage-1-polish prioritization
+question a seventh time since the evidence hasn't changed since 2026-09-11; it remains
+unresolved in `DECISIONS.md`.
+
 ## 2026-09-11 — Tenth competitor research entry: Apuphi's feedback loop, FindSkill.ai's offer calculator, ten-for-ten on the moat layers
 
 Daily research routine's tenth entry: `overall/research/2026-09-11-competitor-analysis.md`.
