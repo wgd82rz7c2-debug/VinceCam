@@ -4,6 +4,35 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-13 — Twelfth competitor research entry: HireGlide, Company.fit, a suspected CareerExplorer white-label, and a 13th straight blank on the moat layers
+
+Daily research routine's twelfth entry: `overall/research/2026-09-13-competitor-analysis.md`.
+WebFetch was unavailable this run (every attempt returned `EGRESS_BLOCKED`), so all findings rest
+on search snippets only — flagged as lower-confidence than usual. Found Testerly, whose per-career
+"fit report" pages describe an interest taxonomy matching the Sokanu/CareerExplorer engine,
+raising an unverified hypothesis that it's a white-label reseller rather than an independent
+competitor — worth a direct-fetch verification once network access is restored. Found Company.fit
+(free candidate profile scored as a match % against live postings, employers pay per verified
+hire — a fourth distinct B2B monetization lane) and two more general AI job boards (HireGlide,
+CareerHub.com), all in the already-commoditized resume-plus-preferences category. Found
+JobComparator.com and a cluster of offer-comparison-calculator clones — a second concrete
+"how not to compete" anchor for Stage 3 after FindSkill.ai (9/11) — and Wing/SLI.pro, a personal-
+branding coaching product whose "Career Intelligence Platform" branding is close enough to
+VinceCam's own positioning language to flag for pitch messaging, though it's not a functional
+competitor. Checked Apuphi, Extern, CoreFactors, RippleMatch/JobGet, CareerExplorer, and Handshake
+AI for 2026 updates; found none that close either moat gap (Handshake's Spring '26 release adds
+employer-side analytics and a student AI job-fit chat assistant, still no finance disambiguation
+or task-level feedback loop — recommended downgrading it to a monthly re-check). Both moat
+questions (finance-specific sub-career fit scoring; a true profile-driven Company × Career ×
+Location comparison or task-level re-scoring loop) came back empty for the 13th consecutive day;
+explicitly re-raised the Stage 2/3-vs-Stage-1-polish prioritization question given that streak.
+Updated `overall/research/ledger.html` (now 12 entries filed). **Artifact publish failed again**
+— same version-conflict wall as 2026-09-06 through 2026-09-12, eighth day running; see
+`DECISIONS.md`. The live artifact is now eight entries behind the repo file. Did not send a second
+push notification since the founder was already notified about this exact, unresolved block on
+2026-09-09 and nothing material has changed since. No BASE_IDEA.md regression found; full document
+read this run.
+
 ## 2026-09-12 — Eleventh competitor research entry: Extern's paid externships, CoreFactors' avoidance scoring, and a FindSkill.ai correction
 
 Daily research routine's eleventh entry: `overall/research/2026-09-12-competitor-analysis.md`.
