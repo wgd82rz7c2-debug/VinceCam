@@ -4,6 +4,33 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-14 — Thirteenth competitor research entry: Testerly's founder is CareerExplorer's own creator, GoSprout's compliance-grade task data, 14th straight blank on the moat layers
+
+Daily research routine's thirteenth entry: `overall/research/2026-09-14-competitor-analysis.md`.
+`WebFetch` was blocked again today for `testerly.com` specifically, a second straight day of egress
+trouble, so today's Testerly finding rests on secondary sources rather than a direct fetch. It
+revises yesterday's "suspected white-label" hypothesis: secondary sources describe Testerly's
+founder as the original assessment scientist (PhD, I/O psychology) who built the Sokanu/
+CareerExplorer instrument itself before leaving it, now marketing his own independent instrument
+against his own earlier work — not a reseller, a second instance (after MyPassion.AI vs. Truity)
+of competitors marketing against each other inside the commoditizing quiz category. Found GoSprout,
+a compliance-grade apprenticeship/internship tracking platform (sponsor-verified hours, tasks,
+evaluations; automates state/federal RAPIDS/WIPS/PIRL reporting) — a fourth distinct shape of
+task-level work-exposure data after Forage/Extern, worth a line in future data-partnership
+thinking though no export path was found. Flagged Nodes.inc's "AI Fit Score Calculator" content
+(explicitly claims trajectory/culture/growth-potential scoring) as likely SEO/lead-gen marketing
+rather than a verified product, pending direct-fetch confirmation. Found JobMatchAI, an ACL 2026
+academic system demonstrating the same compute-score-then-explain architecture BASE_IDEA §53–54
+already specifies — not a competitor, but a citable precedent for VinceCam's explainability
+design. Both core moat questions (finance-specific sub-career fit scoring; a true profile-driven
+Company × Career × Location comparison or task-level re-scoring loop) came back empty for the 14th
+consecutive day. Updated `overall/research/ledger.html` (now 13 entries filed). **Artifact publish
+failed again** — same version-conflict wall as 2026-09-06 through 2026-09-13, ninth day running;
+see `DECISIONS.md`. The live artifact is now nine entries behind the repo file. Did not send a
+second push notification since the founder was already notified about this exact, unresolved block
+on 2026-09-09 and nothing material has changed since. No BASE_IDEA.md regression found; full
+document read this run.
+
 ## 2026-09-13 — Twelfth competitor research entry: HireGlide, Company.fit, a suspected CareerExplorer white-label, and a 13th straight blank on the moat layers
 
 Daily research routine's twelfth entry: `overall/research/2026-09-13-competitor-analysis.md`.
