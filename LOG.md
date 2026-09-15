@@ -4,6 +4,29 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-15 — Fourteenth competitor research entry: FutureFit AI's funded resume-to-pathway pipeline, 15th straight blank on the moat layers
+
+Daily research routine's fourteenth entry: `overall/research/2026-09-15-competitor-analysis.md`.
+Found FutureFit AI, an Achieve Partners-backed workforce platform extracting transferable skills
+from resumes and recommending career pathways via labor-market data, deployed at real
+government-workforce scale (~50,000 served in Connecticut, 85% claimed placement) — B2B2G, not
+student-facing, and confirms the same wall as every other name found so far (no enjoyment layer,
+no trajectory layer, no company × location comparison) even at that funding and scale level.
+Filled in yesterday's thin CareerHub.com mention with its official April 2026 launch detail
+(explicit resume-vs-keyword scoring). Confirmed CareerfIT as a distinct, small product from the
+already-logged CareerFitter despite the near-identical name — no new mechanism. `WebFetch`
+remained blocked for both `nodes.inc` and `testerly.com` for a third consecutive day
+(2026-09-13 through 2026-09-15), so both remain unverified pending restored fetch access. Both
+core moat questions (finance-specific sub-career fit scoring; a true profile-driven Company ×
+Career × Location comparison or task-level re-scoring loop) came back empty for the 15th
+consecutive day. Updated `overall/research/ledger.html` (now 14 entries filed). **Artifact publish
+failed again** — same version-conflict wall as 2026-09-06 through 2026-09-14, tenth day running;
+see `DECISIONS.md`. The live artifact is now ten entries behind the repo file. Did not send a
+second push notification since the founder was already notified about this exact, unresolved
+block on 2026-09-09 and nothing material has changed since.
+
+---
+
 ## 2026-09-14 — Thirteenth competitor research entry: Testerly's founder is CareerExplorer's own creator, GoSprout's compliance-grade task data, 14th straight blank on the moat layers
 
 Daily research routine's thirteenth entry: `overall/research/2026-09-14-competitor-analysis.md`.
