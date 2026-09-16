@@ -4,6 +4,29 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-16 — Fifteenth competitor research entry: WayUp's resume-replacing profile, The Culture Factor's per-company culture tool, 16th straight blank on the moat layers
+
+Daily research routine's fifteenth entry: `overall/research/2026-09-16-competitor-analysis.md`.
+Found WayUp, a college-student job platform that replaces the resume with a self-reported
+"Digital Profile" and soft-skills assessment feeding its match — same posting-match category as
+Handshake/Simplify/Teal, but a new name and a concrete existence-proof that VinceCam's target
+students already tolerate a lightweight personality questionnaire elsewhere. Found The Culture
+Factor's "Company Comparison" tool, which infers a six-dimension culture report for any employer
+from public digital signals rather than crowdsourced reviews — not a competitor, but a candidate
+third data source for VinceCam's own Conditions/Career-Signal company record. Testerly's founder
+story (original author of the Sokanu/CareerExplorer assessment, now marketing Testerly against a
+precision limit in that same earlier work) firmed up further via the company's own first-person
+comparison page surfaced in search, though still not independently fetched. `WebFetch` remained
+blocked for both `nodes.inc` and `testerly.com` for a fourth consecutive day (2026-09-13 through
+2026-09-16). Both core moat questions (finance-specific sub-career fit scoring; a true
+profile-driven Company × Career × Location comparison or task-level re-scoring loop) came back
+empty for the 16th consecutive day. Updated `overall/research/ledger.html` (now 15 entries
+filed). **Artifact publish failed again** — same version-conflict wall as 2026-09-06 through
+2026-09-15, eleventh day running; see `DECISIONS.md`. The live artifact is now eleven entries
+behind the repo file. Did not send a second push notification since the founder was already
+notified about this exact, unresolved block on 2026-09-09 and nothing material has changed
+since. No BASE_IDEA.md regression found; full document read this run.
+
 ## 2026-09-15 — Fourteenth competitor research entry: FutureFit AI's funded resume-to-pathway pipeline, 15th straight blank on the moat layers
 
 Daily research routine's fourteenth entry: `overall/research/2026-09-15-competitor-analysis.md`.
