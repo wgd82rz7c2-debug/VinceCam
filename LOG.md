@@ -4,6 +4,31 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-17 — Sixteenth competitor research entry: AI-generated career-simulation cluster, Territorium's posting-level skill match, 17th straight blank on the moat layers
+
+Daily research routine's sixteenth entry: `overall/research/2026-09-17-competitor-analysis.md`.
+Found a genuinely new mechanism rather than another quiz or matcher: a cluster of products
+(Career Compass, ExploreYou, Simploy, newl) that infer work-fit signal from a user's choices
+inside a synthetic, AI-generated task simulation rather than from self-report or real
+employer-sponsored exposure — Simploy runs complete 3–4 week career simulations inside
+AI-generated companies with performance analytics. A fifth distinct shape of task-level
+work-exposure data (after Forage/Extern/GoSprout/generic internship apps), the first synthetic
+one, but none finance-specific and none paired with resume-based Readiness or a company/location
+layer; all sit one decision-stage earlier (major choice) than VinceCam's post-declaration
+business-function disambiguation. Found Territorium's "Opportunity Fit Score," a live,
+at-scale K12/higher-ed/workforce-board posting-level skill-gap matcher — pure skills/credential
+matching, no enjoyment/trajectory dimension, but a useful reference for VinceCam's own
+posting-override display. `WebFetch` remained blocked for `nodes.inc` and `testerly.com` for a
+fifth consecutive day (2026-09-13 through 2026-09-17), and also blocked `territorium.com` and
+`mycareercompass.fit` today. Both core moat questions (finance-specific sub-career fit scoring;
+a true profile-driven Company × Career × Location comparison or task-level re-scoring loop) came
+back empty for the 17th consecutive day. Updated `overall/research/ledger.html` (now 16 entries
+filed). **Artifact publish failed again** — same version-conflict wall as 2026-09-06 through
+2026-09-16, twelfth day running; see `DECISIONS.md`. The live artifact is now twelve entries
+behind the repo file. Did not send a second push notification since the founder was already
+notified about this exact, unresolved block on 2026-09-09 and nothing material has changed
+since. No BASE_IDEA.md regression found; full document read this run.
+
 ## 2026-09-16 — Fifteenth competitor research entry: WayUp's resume-replacing profile, The Culture Factor's per-company culture tool, 16th straight blank on the moat layers
 
 Daily research routine's fifteenth entry: `overall/research/2026-09-16-competitor-analysis.md`.
