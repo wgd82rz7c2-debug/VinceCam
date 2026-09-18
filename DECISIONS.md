@@ -5,6 +5,56 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-18 — Same artifact publish conflict, thirteenth day running; not re-notifying since nothing changed
+
+**Decision:** This run's first publish attempt was refused because the tool considered the live
+artifact unviewed; the refusal handed over the live HTML directly, still stuck at 4 entries
+(Sep 2–5) — confirming the live page has not moved since the 2026-09-06 conflict began, now for a
+thirteenth day. Compared that live HTML against the repo's `ledger.html` (already carrying entries
+Sep 2 through Sep 18) and confirmed the repo version is still a strict superset — the Sep 2–5
+entries match verbatim. Republished the repo file as the merge. That second attempt was refused
+too, with the same message as the prior eleven days: the content is identical to the version
+already refused, and the tool requires an explicit fresh fetch of the artifact URL to confirm
+before it will accept the resend — functionally the `read` action. `overall/research/ARTIFACT.md`
+bars `read` on this URL for this run for the same permission-prompt-hang reason as the prior
+twelve days, and `force:true` again requires explicit human confirmation this run has no way to
+obtain, so neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 through 2026-09-17 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now correctly
+contains all 17 entries (Sep 2 through Sep 18). No research content is lost; only the live page is
+stale, still showing 4 entries against the repo's 17, now for a thirteenth consecutive day with no
+forward progress.
+
+**Reversible?** Yes. A human, or a future run with `read`/`force` permission (or one that starts
+its very first artifact action of the session with an explicit fetch of the URL, satisfying the
+tool's "confirm via fresh fetch" requirement before any publish attempt burns it), can republish
+`ledger.html` from the repo to catch the live page up in one shot.
+
+**Open item for the founder — now thirteen days running, unresolved since first raised 2026-09-06:**
+Nothing has changed about this wall in thirteen days of identical daily escalation. Restating the
+2026-09-09 through 2026-09-17 options rather than inventing a new one, since none of them have
+been acted on: (a) grant a future run permission to use `read` on this specific URL with a human
+available to approve the resulting prompt if it appears, (b) have a human manually republish
+`ledger.html` once to reset the artifact's version state, or (c) reconsider whether
+`ARTIFACT.md`'s blanket prohibition should instead be scoped to only the failure mode it was
+written for, so a run can still fetch-then-publish in the same turn when a version conflict is
+detected. The founder was already notified out-of-band about this on 2026-09-09; since nothing
+material has changed since that notification (same wall, same unresolved options, no new
+consequence), this run does not send a second one — repeating an already-delivered alert with no
+new information would just be noise. If a human reads this and still hasn't acted, the 2026-09-09
+notification stands as the live ask.
+
+**Separately:** `WebFetch` egress to `nodes.inc` and `testerly.com` failed again this run — now a
+sixth consecutive day (2026-09-13 through 2026-09-18) blocking direct verification of both
+standing competitor claims. `WebSearch` was available this run (unlike prior days) and surfaced
+materially richer first-party-sourced detail on both names, reducing but not eliminating the need
+for direct verification — see today's research file's Open Questions for detail. Not escalated via
+push notification on its own — it degrades research confidence on named items, not the routine's
+ability to run, commit, or push.
+
+---
+
 ## 2026-09-17 — Same artifact publish conflict, twelfth day running; not re-notifying since nothing changed
 
 **Decision:** This run's first publish attempt was refused because the tool considered the live

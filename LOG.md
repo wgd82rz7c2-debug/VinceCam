@@ -4,6 +4,28 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-18 — Seventeenth competitor research entry: AmplifyME, a mature at-scale finance-specific simulation incumbent, plus Talantir's explainable hiring output
+
+Daily research routine's seventeenth entry: `overall/research/2026-09-18-competitor-analysis.md`.
+`WebSearch` was available this run (alongside `WebFetch`) and surfaced the most material find of
+the whole series: **AmplifyME**, a finance-only simulation platform founded 2009, serving
+250,000+ students across 400+ universities with live Markets/Banking/Asset-Management/Quant
+simulations, used by real banks (Morgan Stanley, UBS, Jefferies, RBC, Evercore) for assessment,
+training, and a fast-track hiring pipeline. It is the first competitor in 18 days of searching to
+combine genuine finance-specificity with real institutional scale — but has no Audit/Tax/FP&A/
+Treasury tracks, no resume-based Readiness layer, and no four-dimension fit score, so the core
+moat gap narrows without closing. Also found **Talantir** (EU work-simulation-to-hiring platform
+whose employer output explains a candidate's reasoning process, not just a score — a second
+precedent for VinceCam's explainability principle after JobMatchAI), and richer secondary-source
+detail on the two standing unverified names (Nodes.inc now looks like a real B2C+B2B fit-score
+product; Testerly's CareerExplorer-founder-origin story reconfirmed) though direct `WebFetch` to
+both remained blocked a sixth consecutive day. Updated `overall/research/ledger.html` (now 17
+entries filed). **Artifact publish failed again** — same version-conflict wall as 2026-09-06
+through 2026-09-17, thirteenth day running; see `DECISIONS.md`. The live artifact is now thirteen
+entries behind the repo file. Did not send a second push notification since the founder was
+already notified about this exact, unresolved block on 2026-09-09 and nothing material has
+changed since. No BASE_IDEA.md regression found; full document read this run.
+
 ## 2026-09-17 — Sixteenth competitor research entry: AI-generated career-simulation cluster, Territorium's posting-level skill match, 17th straight blank on the moat layers
 
 Daily research routine's sixteenth entry: `overall/research/2026-09-17-competitor-analysis.md`.
