@@ -5,6 +5,24 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-18 — Recovered an unpushed 2026-09-17 commit found on session start; distinct from the artifact-publish issue
+
+**Decision:** This run started with `HEAD` detached at a commit (`5b03dde`, "Daily competitor
+research: 2026-09-17") that was one commit ahead of both the local `main` branch and
+`origin/main` — the 2026-09-17 run's commit had never been merged into `main` or pushed. Fixed
+by force-moving local `main` to include it (a fast-forward, since `main` was a strict ancestor),
+then committing today's work on top and pushing both commits together. No content was at risk —
+the commit existed and matched the repo state this run read at the start — but had this run not
+happened to notice `git status`'s "HEAD detached" message, that commit would have stayed
+unreachable from any branch and eventually been at risk of git garbage collection. This is a
+distinct failure from the standing artifact-publish conflict below (that one leaves the *public
+artifact page* stale while the repo stays correct; this one could have left the *repo itself*
+missing a day's work). Recommend whoever runs this routine confirm each run ends on `main` with
+`git status` showing "up to date with origin/main" before finishing, rather than assuming the
+prior run's `git push` succeeded.
+
+---
+
 ## 2026-09-18 — Same artifact publish conflict, thirteenth day running; not re-notifying since nothing changed
 
 **Decision:** This run's first publish attempt was refused because the tool considered the live
