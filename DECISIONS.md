@@ -5,6 +5,86 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-19 — Detached-HEAD-with-unpushed-commit recurred a second day running; this time no data was actually at risk
+
+**Decision:** This run started the same way 2026-09-18's did: `HEAD` was detached, one commit
+ahead of local `main` (`a339918`, 2026-09-18's own recovery commit) and — per this run's first
+`git fetch origin main` — one commit ahead of `origin/main` too (still at `70f0606`, 2026-09-16's
+commit). Confirmed with `git merge-base --is-ancestor main HEAD` that this was a clean
+fast-forward, force-moved local `main` to `HEAD`, checked out `main`, and ran `git push -u origin
+main`. The push reported "Everything up-to-date" — by the time it ran, `origin/main` had already
+advanced to `a339918` on its own, meaning 2026-09-18's push evidently did succeed after all (or
+some other process pushed it) and this run's initial fetch simply caught a stale moment. Net
+effect: no commit was actually unreached or at risk this time, but the local working tree
+(detached `HEAD`, `main` pointer lagging) was in the same unsafe-looking state as 2026-09-18's
+genuine near-miss, for a second consecutive day.
+
+**Why flagged anyway:** Whether or not data was at risk this specific time, a routine that
+starts detached from `main` two days running — regardless of cause (a prior session ending
+without checking out `main`, a checkout race with an in-flight push, or something else in how
+this environment is provisioned between runs) — is a pattern worth the founder's attention
+separately from the artifact-publish conflict below. This entry's `git status` check before
+finishing confirms today's run ends with local `main` at the same commit as `origin/main`, per
+the recommendation 2026-09-18 made.
+
+**Reversible?** N/A — nothing to reverse; this is a process-hygiene flag, not a content change.
+
+**Open item for the founder:** if this recurs a third day, it's probably not coincidence.
+Recommend checking whatever wrapper or scheduler starts each day's session for whether it
+`git checkout main` (vs. leaving a detached checkout from a prior clone/fetch step) before
+handing control to the routine.
+
+---
+
+## 2026-09-19 — Same artifact publish conflict, fourteenth day running; not re-notifying since nothing changed
+
+**Decision:** This run's first publish attempt was refused because the tool considered the live
+artifact unviewed; the refusal handed over the live HTML directly, still stuck at 4 entries
+(Sep 2–5) — confirming the live page has not moved since the 2026-09-06 conflict began, now for
+a fourteenth day. Compared that live HTML against the repo's `ledger.html` (already carrying
+entries Sep 2 through Sep 19) and confirmed the repo version is still a strict superset — the
+Sep 2–5 entries match verbatim. Republished the repo file as the merge. That second attempt was
+refused too, with the same message as the prior twelve days: the content is identical to the
+version already refused, and the tool requires an explicit fresh fetch of the artifact URL to
+confirm before it will accept the resend — functionally the `read` action.
+`overall/research/ARTIFACT.md` bars `read` on this URL for this run for the same
+permission-prompt-hang reason as the prior thirteen days, and `force:true` again requires
+explicit human confirmation this run has no way to obtain, so neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 through 2026-09-18 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now
+correctly contains all 18 entries (Sep 2 through Sep 19). No research content is lost; only the
+live page is stale, still showing 4 entries against the repo's 18, now for a fourteenth
+consecutive day with no forward progress.
+
+**Reversible?** Yes. A human, or a future run with `read`/`force` permission (or one that starts
+its very first artifact action of the session with an explicit fetch of the URL, satisfying the
+tool's "confirm via fresh fetch" requirement before any publish attempt burns it), can republish
+`ledger.html` from the repo to catch the live page up in one shot.
+
+**Open item for the founder — now fourteen days running, unresolved since first raised
+2026-09-06:** Nothing has changed about this wall in fourteen days of identical daily
+escalation. Restating the 2026-09-09 through 2026-09-18 options rather than inventing a new one,
+since none of them have been acted on: (a) grant a future run permission to use `read` on this
+specific URL with a human available to approve the resulting prompt if it appears, (b) have a
+human manually republish `ledger.html` once to reset the artifact's version state, or (c)
+reconsider whether `ARTIFACT.md`'s blanket prohibition should instead be scoped to only the
+failure mode it was written for, so a run can still fetch-then-publish in the same turn when a
+version conflict is detected. The founder was already notified out-of-band about this on
+2026-09-09; since nothing material has changed since that notification (same wall, same
+unresolved options, no new consequence), this run does not send a second one — repeating an
+already-delivered alert with no new information would just be noise. If a human reads this and
+still hasn't acted, the 2026-09-09 notification stands as the live ask.
+
+**Separately:** `WebFetch` egress to `nodes.inc` and `testerly.com` failed again this run — now a
+seventh consecutive day (2026-09-13 through 2026-09-19) blocking direct verification of both
+standing competitor claims, and today additionally blocked a third domain
+(`whichfinancebroareyou.com`), suggesting a general egress restriction rather than a
+domain-specific one. Not escalated via push notification on its own — it degrades research
+confidence on named items, not the routine's ability to run, commit, or push.
+
+---
+
 ## 2026-09-18 — Recovered an unpushed 2026-09-17 commit found on session start; distinct from the artifact-publish issue
 
 **Decision:** This run started with `HEAD` detached at a commit (`5b03dde`, "Daily competitor

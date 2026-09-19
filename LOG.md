@@ -4,6 +4,32 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-19 — Eighteenth competitor research entry: FinanceFit's finance-archetype quiz, CFA Institute's ICAN pathway tool, Callings.ai's shallow company fit report
+
+Daily research routine's eighteenth entry: `overall/research/2026-09-19-competitor-analysis.md`.
+Delegated the web search to a sub-agent briefed on VinceCam's architecture, the two standing
+moat gaps, and the 100+ names already logged 2026-09-02 through 2026-09-18. Found **FinanceFit**
+("Which Finance Bro Are You," ~12,800 self-reported quiz-takers) sorting students into finance
+sub-career archetypes — likely a single-pass personality quiz with no resume evidence or scored
+dimensions; unverified since `WebFetch` to the site was blocked. Found the **CFA Institute's
+ICAN Specialized Pathways Quiz**, a free, institutionally-backed values quiz reaching the same
+student population through a professional-association channel — narrower than VinceCam's
+24-career universe, but a new acquisition-channel idea (professional associations, not just
+universities) for BASE_IDEA §73. Found **Callings.ai** (formerly JobHunters.ai), whose
+per-company "fit report" feature is the shape closest to VinceCam's Stage 2 seen yet, but
+appears to be generic resume-vs-company matching rather than a career-specific employer
+comparison — a second "how not to compete" anchor for Stage 2. `WebFetch` to `nodes.inc` and
+`testerly.com` remained blocked a seventh consecutive day (2026-09-13 through 2026-09-19), and
+today also blocked the FinanceFit site, suggesting a general egress restriction. Both core moat
+questions (finance-specific sub-career fit scoring; a true profile-driven Company × Career ×
+Location comparison or task-level re-scoring loop) came back empty for the 19th consecutive
+day. Updated `overall/research/ledger.html` (now 18 entries filed). **Repo hygiene:** this run
+started with `HEAD` detached one commit ahead of `main` — the same failure shape as 2026-09-18's
+recovery note — fast-forwarded and re-pushed; by push time `origin/main` had already caught up,
+so nothing was at risk, but see `DECISIONS.md` for the recurrence flagged to the founder. No
+BASE_IDEA.md regression found; full document read this run. See `DECISIONS.md` for whether
+today's artifact-publish attempt succeeded or extended the standing conflict.
+
 ## 2026-09-18 — Seventeenth competitor research entry: AmplifyME, a mature at-scale finance-specific simulation incumbent, plus Talantir's explainable hiring output
 
 Daily research routine's seventeenth entry: `overall/research/2026-09-18-competitor-analysis.md`.
