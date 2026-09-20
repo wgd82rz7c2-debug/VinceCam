@@ -5,6 +5,57 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-20 — Same artifact publish conflict, fifteenth day running; not re-notifying since nothing changed
+
+**Decision:** This run's first publish attempt was refused because the tool considered the live
+artifact unviewed; the refusal handed over the live HTML directly, still stuck at 4 entries
+(Sep 2–5) — confirming the live page has not moved since the 2026-09-06 conflict began, now for a
+fifteenth day. Compared that live HTML against the repo's `ledger.html` (already carrying entries
+Sep 2 through Sep 20) and confirmed the repo version is still a strict superset — the Sep 2–5
+entries match verbatim. Republished the repo file as the merge. That second attempt was refused
+too, with the same message as the prior thirteen days: the content is identical to the version
+already refused, and the tool requires an explicit fresh fetch of the artifact URL to confirm
+before it will accept the resend — functionally the `read` action.
+`overall/research/ARTIFACT.md` bars `read` on this URL for this run for the same
+permission-prompt-hang reason as the prior fourteen days, and `force:true` again requires
+explicit human confirmation this run has no way to obtain, so neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 through 2026-09-19 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now
+correctly contains all 19 entries (Sep 2 through Sep 20). No research content is lost; only the
+live page is stale, still showing 4 entries against the repo's 19, now for a fifteenth
+consecutive day with no forward progress.
+
+**Reversible?** Yes. A human, or a future run with `read`/`force` permission (or one that starts
+its very first artifact action of the session with an explicit fetch of the URL, satisfying the
+tool's "confirm via fresh fetch" requirement before any publish attempt burns it), can republish
+`ledger.html` from the repo to catch the live page up in one shot.
+
+**Open item for the founder — now fifteen days running, unresolved since first raised
+2026-09-06:** Nothing has changed about this wall in fifteen days of identical daily escalation.
+Restating the 2026-09-09 through 2026-09-19 options rather than inventing a new one, since none
+of them have been acted on: (a) grant a future run permission to use `read` on this specific URL
+with a human available to approve the resulting prompt if it appears, (b) have a human manually
+republish `ledger.html` once to reset the artifact's version state, or (c) reconsider whether
+`ARTIFACT.md`'s blanket prohibition should instead be scoped to only the failure mode it was
+written for, so a run can still fetch-then-publish in the same turn when a version conflict is
+detected. The founder was already notified out-of-band about this on 2026-09-09; since nothing
+material has changed since that notification (same wall, same unresolved options, no new
+consequence), this run does not send a second one — repeating an already-delivered alert with no
+new information would just be noise. If a human reads this and still hasn't acted, the 2026-09-09
+notification stands as the live ask.
+
+**Separately:** `WebFetch` failed on every domain tried this run, including `example.com` — a
+more severe instance than the selective small-site blocking (Nodes.inc, Testerly) running since
+2026-09-13, and enough of a step-change to flag on its own rather than folding into the routine
+weekly restatement. The proxy status endpoint reported healthy with no relay failures, so this
+reads as a policy-level block on the fetch tool for this session rather than a network fault. Not
+escalated via push notification on its own this run — it degraded research confidence for one
+day's findings rather than the routine's ability to run, commit, or push — but flagged in today's
+research file as worth a closer look if it recurs tomorrow.
+
+---
+
 ## 2026-09-19 — Detached-HEAD-with-unpushed-commit recurred a second day running; this time no data was actually at risk
 
 **Decision:** This run started the same way 2026-09-18's did: `HEAD` was detached, one commit

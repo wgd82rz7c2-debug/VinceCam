@@ -4,6 +4,38 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-20 — Nineteenth competitor research entry: PathPilot's B2B2C launch, CoreFactors' dual-axis enjoyment×competence scoring, total WebFetch outage
+
+Daily research routine's nineteenth entry: `overall/research/2026-09-20-competitor-analysis.md`.
+Delegated the web search to a sub-agent briefed on VinceCam's architecture, the two standing
+moat gaps, and the 100+ names already logged 2026-09-02 through 2026-09-19. `WebSearch` worked
+normally, but `WebFetch` was blocked on **every domain tried today, including `example.com`** —
+a more severe, general instance of the selective small-site blocking (Nodes.inc, Testerly)
+running since 2026-09-13; the proxy status endpoint showed no relay failures, so this reads as a
+policy-level block rather than a network fault. Found **PathPilot** (pathpilot.ai, launched
+2026-09-17), a Canadian B2B2C skills-gap job-matching platform at real pilot scale (1,700+ job
+seekers, 80+ practitioners, named partners) — not a direct competitor, but fresh cross-border
+evidence that selling through an institutional intermediary that owns the target population
+works as a channel, generalizing VinceCam's university-licensing hypothesis. Found **CoreFactors'
+"Career Signals"** (a second, distinct product from the vendor logged 2026-09-12), which plots
+each skill on two independent axes — enjoyment and competence — the closest mechanism-level
+precedent in the whole series for VinceCam's own Readiness/Work-Fit separation, though generic-
+skill-level and coach-administered rather than finance-sub-career-specific and self-serve. Also
+found a second wave of commoditized free offer-comparison calculators (Careertics, MaxOfJob,
+LoopCV) and InternTrack, a fourth distinct shape of structured work-exposure data nobody pipes
+into a fit model. Both core moat questions (finance-specific sub-career fit scoring; a true
+profile-driven Company × Career × Location comparison or task-level re-scoring loop) came back
+empty for the 20th consecutive day — the research file recommends the founder consider this
+settled evidence for pitch purposes and reconsider this routine's nightly cadence on those two
+questions specifically. Updated `overall/research/ledger.html` (now 19 entries filed).
+**Artifact publish failed again** — same version-conflict wall as 2026-09-06 through 2026-09-19,
+fifteenth day running; see `DECISIONS.md`. The live artifact is now fifteen entries behind the
+repo file. Did not send a second push notification since the founder was already notified about
+this exact, unresolved block on 2026-09-09 and nothing material has changed since. No
+BASE_IDEA.md regression found; full document read this run. **Repo hygiene:** this run started
+with `HEAD` detached at `origin/main`'s tip with local `main` four commits behind; fast-forwarded
+local `main` to match, no data at risk.
+
 ## 2026-09-19 — Eighteenth competitor research entry: FinanceFit's finance-archetype quiz, CFA Institute's ICAN pathway tool, Callings.ai's shallow company fit report
 
 Daily research routine's eighteenth entry: `overall/research/2026-09-19-competitor-analysis.md`.
