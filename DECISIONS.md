@@ -5,6 +5,60 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-21 — Same artifact publish conflict, sixteenth day running; also fast-forwarded a detached-HEAD repo state
+
+**Decision (artifact):** This run's first publish attempt was refused because the tool considered
+the live artifact unviewed; the refusal handed over the live HTML directly, still stuck at 4
+entries (Sep 2–5) — confirming the live page has not moved since the 2026-09-06 conflict began,
+now for a sixteenth day. Compared that live HTML against the repo's `ledger.html` (already
+carrying entries Sep 2 through Sep 21 after today's edit) and confirmed the repo version is still
+a strict superset — the Sep 2–5 entries match verbatim. Republished the repo file as the merge.
+That second attempt was refused too, with the same message as the prior fourteen days: the
+content is identical to the version already refused, and the tool requires an explicit fresh
+fetch of the artifact URL to confirm before it will accept the resend. `overall/research/
+ARTIFACT.md` bars `read` on this URL for this run for the same permission-prompt-hang reason as
+the prior fifteen days, and `force:true` again requires explicit human confirmation this run has
+no way to obtain, so neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 through 2026-09-20 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now
+correctly contains all 21 entries (Sep 2 through Sep 21). No research content is lost; only the
+live page is stale, still showing 4 entries against the repo's 21, now for a sixteenth
+consecutive day with no forward progress. Did not send a new push notification about this
+specific item — the founder was already notified about this exact, unresolved block on
+2026-09-09 and nothing material has changed since.
+
+**Reversible?** Yes — same remedies as previously logged: (a) a human or future run with
+`read`/`force` permission and a human available to approve the resulting prompt, (b) a human
+manually republishing `ledger.html` once to reset the artifact's version state, or (c)
+reconsidering whether `ARTIFACT.md`'s blanket `read` prohibition should be scoped more narrowly.
+Restating rather than re-litigating, since sixteen days of identical escalation have produced no
+founder action yet.
+
+**Decision (repo hygiene):** This run started with `HEAD` detached at `88b5760` (2026-09-20's
+commit) while local `main` and `origin/main` were both five commits behind, at `70f0606`
+(2026-09-16) — the same detached-HEAD-behind-main failure shape flagged 2026-09-18 and
+2026-09-19. Verified with `git log --oneline 70f0606..88b5760` that the five stranded commits
+were exactly the legitimate 2026-09-17 through 2026-09-20 daily entries, no divergence or
+conflicting work, then fast-forward-merged `main` to the detached tip and pushed before starting
+today's work.
+
+**Why this is safe:** A pure fast-forward with a verified-clean commit list on both sides carries
+no risk of losing or overwriting anyone's work.
+
+**Reversible?** N/A — already applied; `main` and `origin/main` are now caught up through
+2026-09-20's commit as of the start of this run.
+
+**Open item for the founder, now three occurrences (2026-09-18, 2026-09-19, 2026-09-21):**
+Whatever mechanism leaves each run's session on a detached `HEAD` one or more commits ahead of
+`main` at the *start* of the next run (rather than on `main` itself) keeps recurring. Each time,
+recovery has been a clean fast-forward with no data at risk, but that's been true only because no
+run has yet branched off in a conflicting direction while detached. Worth a founder-level look at
+whatever wrapper/environment starts these sessions, so the next run begins on `main` rather than
+relying on this routine to notice and recover a detached state every time.
+
+---
+
 ## 2026-09-20 — Same artifact publish conflict, fifteenth day running; not re-notifying since nothing changed
 
 **Decision:** This run's first publish attempt was refused because the tool considered the live

@@ -4,6 +4,45 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-21 — Twenty-first competitor research entry: Big 4 Talent's 19-dimension transparent recruiting score, second straight total WebFetch outage confirmed at proxy layer
+
+Daily research routine's twenty-first entry: `overall/research/2026-09-21-competitor-analysis.md`.
+Ran the search directly (no sub-agent delegation this run) against the brief's most pointed fresh
+angles: finance sub-career disambiguation, separated enjoyment-vs-competence scoring at task
+level, role-specific employer comparison, outcome-data re-scoring loops, Big-4/accounting-specific
+tools, 2026 funding rounds in career-fit/job-matching, resume-parsing-API scoring vendors, and
+internal service-line-matching tools. `WebSearch` worked normally; `WebFetch` was blocked on every
+domain tried, including `example.com` — the same total-outage shape as 2026-09-20, now confirmed
+a second consecutive day. This time checked `curl "$HTTPS_PROXY/__agentproxy/status"` directly:
+the proxy reports healthy with zero relay failures and full CA coverage, so the block sits above
+the proxy layer specifically for `WebFetch`, not a network or proxy fault — all findings below are
+therefore `WebSearch`-snippet-only and marked unverified. Found **Big 4 Talent** (bigfourtalent.com,
+founded Jan 2023 by Justin Marcus and Jason Allinder), a B2B2C recruiting marketplace exclusively
+for Deloitte/PwC/EY/KPMG alumni that scores every candidate-to-opening match across 19 disclosed,
+weighted dimensions (level, comp, skills, certs, industry, company size, commute) shown
+transparently rather than as a black box — candidates free, employers pay ~12.5% on hire. It's the
+most finance/accounting-specific, multi-dimension, transparent-scoring product found across the
+whole 21-day series outside quiz tools, but it's a hiring/placement marketplace, not career
+discovery: its dimensions are hiring logistics, not Readiness/Enjoyment/Conditions/Trajectory, and
+it treats Big 4 alumni as one labor pool rather than disambiguating audit vs. tax vs. FP&A as
+distinct career paths. Also checked and dismissed as non-competitors: **Freudly** (general
+AI-therapist app with a generic finance-flavored quiz page), **Atlas CPA Index** (static,
+non-personalized Big 4 editorial comparison), and **Joberney**/**Pin** (a general AI job-search
+copilot and a B2B recruiter-sourcing embedding-matcher, respectively — same base-covered
+categories as already-logged tools). No 2026 funding rounds, no Big 4 internal service-line-
+matching tool, and no deployed (non-academic) outcome-data re-scoring engine were found despite
+targeted searches. Both core moat questions (finance-specific sub-career fit scoring; a true
+profile-driven Company × Career × Location comparison or task-level re-scoring loop) came back
+empty for the 21st consecutive day — reinforcing, on a night that specifically targeted the
+brief's sharpest fresh angles, the 2026-09-20 recommendation to treat the gap as settled pitch
+evidence rather than a nightly open question. Updated `overall/research/ledger.html` (now 21
+entries filed). No BASE_IDEA.md regression found; full document read this run. **Repo hygiene:**
+this run started with `HEAD` detached at `88b5760` (2026-09-20's commit) with local `main` and
+`origin/main` both five commits behind, at `70f0606` (2026-09-16) — the same recurring
+detached-HEAD-behind-main failure shape flagged 2026-09-18 through 2026-09-19. Fast-forwarded
+`main` to the detached tip and pushed before starting today's work; no data was at risk since the
+detached commits were already-filed, unpushed prior entries. See `DECISIONS.md`.
+
 ## 2026-09-20 — Nineteenth competitor research entry: PathPilot's B2B2C launch, CoreFactors' dual-axis enjoyment×competence scoring, total WebFetch outage
 
 Daily research routine's nineteenth entry: `overall/research/2026-09-20-competitor-analysis.md`.
