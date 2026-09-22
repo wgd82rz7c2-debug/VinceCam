@@ -5,6 +5,65 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-22 — Same artifact publish conflict, seventeenth day running; also fast-forwarded a detached-HEAD repo state (fourth occurrence)
+
+**Decision (artifact):** This run's first publish attempt was refused because the tool considered
+the live artifact unviewed; the refusal handed over the live HTML directly, still stuck at 4
+entries (Sep 2–5) — confirming the live page has not moved since the 2026-09-06 conflict began,
+now for a seventeenth day. Compared that live HTML against the repo's `ledger.html` (already
+carrying entries Sep 2 through Sep 22 after today's edit) and confirmed the repo version is still
+a strict superset — the Sep 2–5 entries match verbatim. Republished the repo file as the merge.
+That second attempt was refused too, with the same message as the prior fifteen days: the
+content is identical to the version already refused, and the tool requires an explicit fresh
+fetch of the artifact URL to confirm before it will accept the resend. `overall/research/
+ARTIFACT.md` bars `read` on this URL for this run for the same permission-prompt-hang reason as
+the prior sixteen days, and `force:true` again requires explicit human confirmation this run has
+no way to obtain, so neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 through 2026-09-21 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now
+correctly contains all 21 entries (Sep 2 through Sep 22). No research content is lost; only the
+live page is stale, still showing 4 entries against the repo's 21, now for a seventeenth
+consecutive day with no forward progress. Did not send a new push notification about this
+specific item — the founder was already notified about this exact, unresolved block on
+2026-09-09 and nothing material has changed since.
+
+**Reversible?** Yes — same remedies as previously logged: (a) a human or future run with
+`read`/`force` permission and a human available to approve the resulting prompt, (b) a human
+manually republishing `ledger.html` once to reset the artifact's version state, or (c)
+reconsidering whether `ARTIFACT.md`'s blanket `read` prohibition should be scoped more narrowly.
+Restating rather than re-litigating, since seventeen days of identical escalation have produced no
+founder action yet.
+
+**Decision (repo hygiene):** This run started with `HEAD` detached at `e9728eb` (2026-09-21's
+commit) while local `main` was five commits behind, at `70f0606` (2026-09-16) — `origin/main`,
+however, was already caught up to `e9728eb` this time (unlike 2026-09-21, where `origin/main` was
+also behind). This is the fourth occurrence of the same shape flagged 2026-09-18, 2026-09-19, and
+2026-09-21: the session starts on a detached `HEAD` with the local `main` branch pointer stale.
+Verified `HEAD` was a clean fast-forward ahead of local `main` (`git merge-base --is-ancestor main
+HEAD`), then fast-forwarded local `main` to `HEAD` and checked out `main`; `origin/main` needed no
+push this time since it was already current.
+
+**Why this is safe:** A pure fast-forward onto a commit that already matched `origin/main` carries
+no risk of losing or overwriting anyone's work.
+
+**Reversible?** N/A — already applied; `main`, `HEAD`, and `origin/main` all point to the same
+commit as of the start of this run's work.
+
+**Open item for the founder, now four occurrences (2026-09-18, 2026-09-19, 2026-09-21, 2026-09-22):**
+Restating 2026-09-21's flag rather than a new one, since the pattern and the recommended fix
+(check whatever wrapper/environment starts these sessions so the next run begins on `main`) are
+unchanged. Each occurrence has still been a clean, risk-free fast-forward, but that has held only
+because no run has yet branched off in a conflicting direction while detached.
+
+**Separately (tooling):** `WebFetch` was blocked on every domain tried this run, including
+`example.com` — the same total-outage shape as 2026-09-20 and 2026-09-21, now a third consecutive
+day. The proxy status endpoint again showed the proxy itself healthy with zero relay failures, so
+the block sits above the proxy layer specifically for this tool. Today's findings rest on
+`WebSearch` snippets only; see the research file's Open Questions.
+
+---
+
 ## 2026-09-21 — Same artifact publish conflict, sixteenth day running; also fast-forwarded a detached-HEAD repo state
 
 **Decision (artifact):** This run's first publish attempt was refused because the tool considered

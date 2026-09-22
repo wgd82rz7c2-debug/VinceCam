@@ -4,6 +4,37 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-22 — Twenty-second competitor research entry: SkillMap Pro's evidence-linked skill vault plus trajectory planning, a fee-on-hire marketplace cluster, third straight total WebFetch outage
+
+Daily research routine's entry for 2026-09-22 (21st entry actually filed in the ledger; entries
+are one per day, Sep 2 through Sep 22 inclusive): `overall/research/2026-09-22-competitor-analysis.md`.
+`WebFetch` was blocked on every domain tried, including `example.com` — the same total-outage
+shape as 2026-09-20 and 2026-09-21, now a third consecutive day; the proxy status endpoint again
+showed zero relay failures, so the block sits above the proxy layer specifically for this tool.
+All findings rest on `WebSearch` snippets only. Found **SkillMap Pro** (skillmappro.com, $4–24/mo),
+an AI career-intelligence platform matching work-derived skills to O*NET occupations with career
+trajectory planning, competency analysis, and an evidence-linked "achievement vault" — the closest
+match yet to VinceCam's evidence-backed Readiness + Trajectory pairing specifically, though fully
+generic across occupations, with no enjoyment dimension, no company/location layer, and no
+re-scoring from real work experience. Also found Career Fit Test (a third distinct, near-identically-
+named competitor pair in this series), Fika Jobs (a $4M-funded AI video-interview hiring
+marketplace — a fourth fee-on-hire data point, same downstream-of-the-decision category as Big 4
+Talent and Company.fit), and NeduAI SmartProfiles (a static "living profile" convenience, not a
+scored profile). No Big 4 internal staffing tool and no 2026 career-fit funding round found. Both
+core moat questions (finance-specific sub-career fit scoring; a true profile-driven Company ×
+Career × Location comparison or task-level re-scoring loop) came back empty for the 21st
+consecutive day. Updated `overall/research/ledger.html` (now 21 entries filed; corrected the
+stale "Entries filed" stat, which had been reading 19 against an actual 20 pre-existing entries).
+**Artifact publish failed again** — same version-conflict wall as 2026-09-06 through 2026-09-21,
+seventeenth day running; see `DECISIONS.md`. The live artifact is now seventeen entries behind the
+repo file. Did not send a second push notification since the founder was already notified about
+this exact, unresolved block on 2026-09-09 and nothing material has changed since. No BASE_IDEA.md
+regression found; full document read this run. **Repo hygiene:** this run started with `HEAD`
+detached at `e9728eb` (2026-09-21's commit) with local `main` five commits behind, at `70f0606`
+(2026-09-16) — `origin/main` was already caught up this time. Fast-forwarded local `main` to the
+detached tip before starting today's work; no data was at risk. See `DECISIONS.md` — this is the
+fourth occurrence of this exact pattern (2026-09-18, 2026-09-19, 2026-09-21, 2026-09-22).
+
 ## 2026-09-21 — Twenty-first competitor research entry: Big 4 Talent's 19-dimension transparent recruiting score, second straight total WebFetch outage confirmed at proxy layer
 
 Daily research routine's twenty-first entry: `overall/research/2026-09-21-competitor-analysis.md`.
