@@ -5,6 +5,47 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-23 — Same artifact publish conflict, eighteenth day running; repo state clean for the first time since 2026-09-18
+
+**Decision (artifact):** This run's first publish attempt was refused because the tool considered
+the live artifact unviewed; the refusal handed over the live HTML directly, still stuck at 4
+entries (Sep 2–5) — confirming the live page has not moved since the 2026-09-06 conflict began,
+now for an eighteenth day. Compared that live HTML against the repo's `ledger.html` (already
+carrying entries Sep 2 through Sep 23 after today's edit) and confirmed the repo version is still
+a strict superset — the Sep 2–5 entries match verbatim. Republished the repo file as the merge.
+That second attempt was refused too, with the same message as the prior sixteen days: the content
+is identical to the version already refused, and the tool requires an explicit fresh fetch of the
+artifact URL to confirm before it will accept the resend. `overall/research/ARTIFACT.md` bars
+`read` on this URL for this run for the same permission-prompt-hang reason as the prior seventeen
+days, and `force:true` again requires explicit human confirmation this run has no way to obtain,
+so neither was used.
+
+**Why this is safe to leave unresolved for now:** Same as 2026-09-06 through 2026-09-22 —
+`ledger.html` in the repo is the committed source of truth per `ARTIFACT.md`, and it now correctly
+contains all 22 entries (Sep 2 through Sep 23). No research content is lost; only the live page is
+stale, still showing 4 entries against the repo's 22, now for an eighteenth consecutive day with
+no forward progress. Did not send a new push notification about this specific item — the founder
+was already notified about this exact, unresolved block on 2026-09-09 and nothing material has
+changed since.
+
+**Reversible?** Yes — same remedies as previously logged: (a) a human or future run with
+`read`/`force` permission and a human available to approve the resulting prompt, (b) a human
+manually republishing `ledger.html` once to reset the artifact's version state, or (c)
+reconsidering whether `ARTIFACT.md`'s blanket `read` prohibition should be scoped more narrowly.
+Restating rather than re-litigating, since eighteen days of identical escalation have produced no
+founder action yet.
+
+**Separately (repo hygiene):** This run started cleanly on `main`, up to date with `origin/main`,
+working tree clean — the first clean start since before the detached-HEAD pattern began appearing
+on 2026-09-18. No recovery action was needed today.
+
+**Separately (tooling):** Per this run's task brief, `WebFetch` was not attempted (confirmed still
+blocked by network egress policy, consistent with the total outage observed directly on
+2026-09-20 through 2026-09-22). Today's findings rest on `WebSearch` snippets only; see the
+research file's Open Questions.
+
+---
+
 ## 2026-09-22 — Same artifact publish conflict, seventeenth day running; also fast-forwarded a detached-HEAD repo state (fourth occurrence)
 
 **Decision (artifact):** This run's first publish attempt was refused because the tool considered

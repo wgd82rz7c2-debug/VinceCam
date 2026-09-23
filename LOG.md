@@ -4,6 +4,35 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-23 — Twenty-third competitor research entry: Pivoto's four-driver work-alignment assessment, Gloat's transition-data trajectory precedent, clean repo state
+
+Daily research routine's entry for 2026-09-23 (22nd entry actually filed in the ledger; entries
+are one per day, Sep 2 through Sep 23 inclusive): `overall/research/2026-09-23-competitor-analysis.md`.
+Per the task brief, `WebFetch` was not attempted this run (confirmed still blocked by network
+egress policy); all findings rest on `WebSearch` snippets only, same posture as the prior four
+runs. Found **Pivoto** (pivoto.tools), a ~15-minute self-report "Work Alignment Assessment"
+scoring four separately-tracked drivers — Task Alignment, Growth Alignment, Environment Fit,
+Energy Sustainability — into a one-time PDF report, marketed explicitly against personality-type
+tests. It's a fresh, if generic, precedent for VinceCam's core bet that fit should be decomposed
+into independently scored dimensions (Task/Growth/Environment loosely echo Work-Fit/Trajectory/
+Conditions), but critically it has **no Readiness/competence pillar at all** — preference-only,
+no capability evidence, no finance depth, no company/location layer, no living profile. Also
+found **Gloat**, an enterprise internal-mobility platform whose "trajectory intelligence" predicts
+next-role transitions from historical data — not a competitor (B2B, existing-employee mobility,
+not pre-hire student discovery) but the clearest named mechanism yet for how a future
+data-driven Trajectory Fit pillar could work. Dismissed CareerTakes.ai (Edkey) and a
+RippleMatch-powered application flow as the same already-covered commodity resume-matching lane.
+No Big 4 internal service-line tool, no career-fit funding round in the last 1–2 weeks (September
+funding news dominated by biotech/health tech/AI infra), and no deployed 2026 academic system
+doing finance sub-career disambiguation (only generic surveys and a TalentCLEF 2026 NLP workshop)
+were found despite targeted searches. Both core moat questions (finance-specific sub-career fit
+scoring; a true profile-driven Company × Career × Location comparison or task-level re-scoring
+loop) came back empty for the **22nd consecutive day**. Updated `overall/research/ledger.html`
+(now 22 entries filed). No BASE_IDEA.md regression found; full document re-read this run
+(4,154 lines, zero `TBD` hits). **Repo hygiene:** unlike the last several runs, this session
+started cleanly on `main`, up to date with `origin/main`, working tree clean — no detached-HEAD
+recovery needed today, first clean start since before 2026-09-18.
+
 ## 2026-09-22 — Twenty-second competitor research entry: SkillMap Pro's evidence-linked skill vault plus trajectory planning, a fee-on-hire marketplace cluster, third straight total WebFetch outage
 
 Daily research routine's entry for 2026-09-22 (21st entry actually filed in the ledger; entries
