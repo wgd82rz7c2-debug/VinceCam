@@ -4,6 +4,41 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-24 — Twenty-fourth competitor research entry: Working Eye's video-testimonial career discovery, FutureFit/entrext's enterprise-to-consumer pivot, NELVA AI's lifetime institutional license
+
+Daily research routine's entry for 2026-09-24 (23rd entry actually filed in the ledger; entries
+are one per day, Sep 2 through Sep 24 inclusive): `overall/research/2026-09-24-competitor-analysis.md`.
+Delegated the search to a sub-agent, which tested `WebFetch` directly against five unrelated
+domains (arxiv.org, unicloud360.com, emerald.com, en.wikipedia.org, crunchbase.com) — all five
+failed identically with `EGRESS_BLOCKED`, and the proxy status endpoint again showed zero relay
+failures, confirming the same blanket policy-level block seen 2026-09-20 through 2026-09-22 (not
+attempted 2026-09-23). All findings rest on `WebSearch` snippets only. Found **Working Eye** (UK,
+crowdfunded via a £75,000 Indiegogo raise), a video-testimonial careers-discovery platform pairing
+AI recommendations with short films of real people doing real jobs — content curation, not a
+modeled Work-Fit dimension, but a cheap idea worth borrowing for VinceCam's own career pages.
+Found **FutureFit/entrext**, a newly surfaced *consumer* spinoff of the already-logged enterprise
+FutureFit AI, marketed directly at students — mechanism and pricing unverified due to the
+`WebFetch` block, but a notable go-to-market signal that a funded, enterprise-scale workforce
+platform is moving downstream into VinceCam's exact beachhead. Found **NELVA AI**, which blends a
+labor-market demand/growth signal into one composite score (not an independent axis, unlike
+VinceCam's four-dimension split) and offers a new B2B pricing shape — one institutional license,
+unlimited tests, for life — worth weighing against the still-open university-pricing question.
+Dismissed UniCloud360/codingace.net's offer comparators (same commoditized bucket as
+JobComparator.com et al.) and Fit First Technologies (pre-existing, same category as
+pymetrics/Harver). No Big 4 internal service-line tool, no material 2026 career-fit funding round,
+and no confirmed finance-specific multi-dimensional academic paper were found; one intriguingly
+titled arXiv paper ("The Three Axes of Success") surfaced only as an unverified bibliography
+citation and is flagged for manual follow-up outside this environment. Both core moat questions
+(finance-specific sub-career fit scoring; a true profile-driven Company × Career × Location
+comparison or task-level re-scoring loop) came back empty for the **23rd consecutive day**.
+Updated `overall/research/ledger.html` (now 23 entries filed). **Artifact publish failed again**
+— same version-conflict wall as 2026-09-06 through 2026-09-23, nineteenth day running; see
+`DECISIONS.md`. The live artifact is now nineteen entries behind the repo file. Did not send a
+second push notification since the founder was already notified about this exact, unresolved
+block on 2026-09-09 and nothing material has changed since. No BASE_IDEA.md regression found;
+full document re-read this run (4,155 lines, zero `TBD` hits). **Repo hygiene:** second clean start
+running — session began on `main`, up to date with `origin/main`, working tree clean.
+
 ## 2026-09-23 — Twenty-third competitor research entry: Pivoto's four-driver work-alignment assessment, Gloat's transition-data trajectory precedent, clean repo state
 
 Daily research routine's entry for 2026-09-23 (22nd entry actually filed in the ledger; entries
