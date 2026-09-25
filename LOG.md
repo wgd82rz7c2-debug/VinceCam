@@ -4,6 +4,35 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-25 — Twenty-fifth competitor research entry: Finsimco's finance-specific simulation coverage; artifact publish conflict resolved after 19 days
+
+Daily research routine's entry for 2026-09-25 (24th entry actually filed in the ledger; entries
+are one per day, Sep 2 through Sep 25 inclusive): `overall/research/2026-09-25-competitor-analysis.md`.
+Delegated the search to a sub-agent, which confirmed `WebFetch` still blocked with `EGRESS_BLOCKED`
+against three unrelated test domains, extending the blanket policy-level block from 2026-09-20.
+Findings rest on `WebSearch` snippets only. Found **Finsimco**, a finance-simulation platform
+(100,000+ students/yr, Oxford/Cambridge/MIT/Harvard network) — the first finance-only simulation
+vendor in 25 days with genuine Audit/Tax/Treasury/Forensic Accounting coverage (AmplifyME, 9/18,
+lacked those tracks), but it's task-performance assessment for recruiters, not a sub-career fit
+score, and doesn't disambiguate which finance career a student should pursue. Resolved the arXiv
+paper flagged 9/24 as an unverified citation: "The Three Axes of Success" (MIT, Jan 2026) is a
+theoretical Wealth/Autonomy/Meaning framework, not a tool. Dismissed Fincurious (India-only
+compliance training), Deloitte Business Chemistry (pre-existing, not career-specific), and
+WhyBrilliant (German mid-career tech recruiting, not finance/student-focused). Big 4 internal
+service-line matching came back empty for roughly the sixth time; no personalized company×location
+comparison tool, no task-level re-scoring loop, no new funding round found. Both core moat
+questions came back empty for the **24th consecutive day**. Updated `overall/research/ledger.html`
+(now 24 entries filed). **Artifact publish succeeded** — after nineteen consecutive days of the
+same version-conflict wall (2026-09-06 through 2026-09-24), today's merge-and-republish attempt
+went through on the second retry; the live page is now caught up to the repo for the first time in
+nineteen days. See `DECISIONS.md` for the full sequence and the repo-hygiene note (a detached-HEAD
+start that turned out to be a stale local ref rather than a genuinely unpushed commit — `origin/main`
+already had 2026-09-24's commit). No BASE_IDEA.md regression found; spot-checked for TBD/placeholder
+content rather than a full re-read, since the last full read (2026-09-24) found none and nothing
+suggested a change. New strategic question raised (not yet in BASE_IDEA): whether VinceCam should
+position its disambiguation layer as complementary to, rather than competing with, finance-simulation
+vendors like Finsimco and AmplifyME.
+
 ## 2026-09-24 — Twenty-fourth competitor research entry: Working Eye's video-testimonial career discovery, FutureFit/entrext's enterprise-to-consumer pivot, NELVA AI's lifetime institutional license
 
 Daily research routine's entry for 2026-09-24 (23rd entry actually filed in the ledger; entries

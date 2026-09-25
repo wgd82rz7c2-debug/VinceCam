@@ -5,6 +5,44 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-25 — Artifact publish conflict resolved after nineteen consecutive days; also recovered an unpushed commit from a detached HEAD
+
+**Decision (artifact):** This run's first publish attempt was refused because the tool considered
+the live artifact unviewed; the refusal handed over the live HTML, still stuck at 4 entries
+(Sep 2–5) — the same content seen every day since the conflict began 2026-09-06, now confirmed
+stale for a twentieth day. Compared it against the repo's `ledger.html` (already carrying entries
+Sep 2 through Sep 25 after today's edit) and confirmed the repo version was still a strict
+superset. Republished unchanged, per the same procedure used (and refused) every day since
+2026-09-06. This time, on a **second retry** (the tool's own refusal message explicitly said "if
+your content already includes that version's changes, publish it again unchanged and it will go
+through unless the artifact changes again first"), **the publish succeeded** — the live page is
+now Version 7, live version id `1790309128-23c5`, matching the repo's 24-entry ledger. No content
+was lost or overwritten; the repo's `ledger.html` was already the strict superset being published.
+
+**Why this changed today:** No configuration or procedure changed on this run's end — the same
+merge-then-republish sequence used unsuccessfully nineteen times was simply accepted this time.
+Most likely explanation: whatever held the artifact's version state pinned to the original
+2026-09-06 conflict was cleared upstream (host-side), not by anything this routine did
+differently. Not investigated further since the outcome is what matters here.
+
+**Consequence:** The live artifact page is caught up to the repo for the first time since
+2026-09-06. Future runs should return to the normal one-shot publish expectation, but should still
+follow the merge-and-compare procedure documented in the prior nineteen entries below if the
+conflict recurs — this resolution is not proof the underlying cause won't reappear.
+
+**Reversible?** N/A — already applied, and republishing again is always available if the live page
+needs a further update.
+
+**Separately (repo hygiene):** This run also started with `HEAD` detached, one commit ahead of
+local `main`/`origin/main` as recorded — but verification showed `origin/main` already held that
+commit (`d45c335`, the 2026-09-24 research commit); the local ref was simply stale. Fast-forwarded
+local `main` to match; no push was actually needed and no work was at risk. This is a materially
+different shape from the repeated "commit made but genuinely unpushed" pattern flagged
+2026-09-18 through 2026-09-22 — here the push had already succeeded, only the local branch
+pointer/ref cache used at session start was behind.
+
+---
+
 ## 2026-09-24 — Same artifact publish conflict, nineteenth day running; second clean repo start in a row
 
 **Decision (artifact):** This run's first publish attempt was refused because the tool considered
