@@ -4,6 +4,19 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-26 — Twenty-sixth competitor research entry: no new competitor closes either moat layer, 25th straight blank
+
+Daily research routine's entry for 2026-09-26 (25th entry actually filed in the ledger):
+`overall/research/2026-09-26-competitor-analysis.md`. Delegated to a sub-agent briefed on the two
+standing moat questions and ~130 already-logged names; ran 10 distinct search angles including a
+fresh retry on Big 4 internal service-line matching via informal accounts. `WebFetch` still fully
+blocked (`EGRESS_BLOCKED`, tested against `example.com` and `careerexplorer.com`). No genuinely new
+competitor found; checked and dismissed Handshake's newly-launched AI Skills Studio (skills
+portfolio, not fit-scoring), CompanyMatch.me (generic culture-fit vector, no career taxonomy), and
+EY's unified graduate assessment (a hiring screen, not a service-line recommendation tool). Both
+moat questions blank for the 25th consecutive day. Updated `overall/research/ledger.html` (25
+entries filed) and published to the artifact. No BASE_IDEA.md regression found on full re-read.
+
 ## 2026-09-25 — Twenty-fifth competitor research entry: Finsimco's finance-specific simulation coverage; artifact publish conflict resolved after 19 days
 
 Daily research routine's entry for 2026-09-25 (24th entry actually filed in the ledger; entries
