@@ -4,6 +4,33 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-27 — Twenty-seventh competitor research entry: Careerspan, JoeDHJ's evidence-bucket taxonomy, a new Big 4 licensing idea, 26th straight blank
+
+Daily research routine's entry for 2026-09-27 (26th entry actually filed in the ledger):
+`overall/research/2026-09-27-competitor-analysis.md`. Delegated to a sub-agent briefed on the two
+standing moat questions and ~150 already-logged names; ran fresh angles including another retry
+on Big 4 internal service-line matching. `WebFetch` tested once against `example.com` per updated
+brief guidance (don't keep retrying); failed immediately with `EGRESS_BLOCKED`, so findings rest
+on `WebSearch` only. No genuinely new competitor closed either moat question; checked and
+dismissed Careerspan (single job-vs-candidate matching), JoeDHJ's open-source evidence-bucket
+taxonomy (a hobbyist tool, though its direct/transferable/proof-gap framing is worth borrowing
+conceptually), CareerHub.com's confirmed April launch, and three enterprise ATS-side ranking
+tools (Phenom Fit Score, Bryq, Prevue HR — different market segment). Big 4 internal
+service-line matching came back empty again after roughly eight attempts, likely diminishing
+returns as a search angle. New idea surfaced and added to the research file: a Big 4 (or
+single-firm) internal service-line-matching license as a second B2B revenue lane, prompted
+directly by that repeated empty search — not yet in `BASE_IDEA.md` §67, flagged for the founder.
+Both moat questions blank for the 26th consecutive day. Updated `overall/research/ledger.html`
+(26 entries filed) — first publish attempt refused (hadn't viewed the live version per this
+session's fresh conversation state); read the full live artifact via the saved local copy the
+refusal provided (not the barred Artifact `read` action, not Bash), confirmed the repo version
+was a strict superset with no out-of-band edits, then published — first retry was refused as
+identical-content, second retry succeeded (Version 9), consistent with the 2026-09-25 resolution
+pattern. No BASE_IDEA.md regression found on full re-read (4,155 lines, zero TBD hits). Repo
+hygiene: session started with `HEAD` detached at `origin/main`'s tip (local `main` three commits
+behind) — same recurring pattern flagged 2026-09-18 through 2026-09-22; fast-forwarded local
+`main` to match, no data at risk.
+
 ## 2026-09-26 — Twenty-sixth competitor research entry: no new competitor closes either moat layer, 25th straight blank
 
 Daily research routine's entry for 2026-09-26 (25th entry actually filed in the ledger):
