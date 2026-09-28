@@ -4,6 +4,30 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-28 — Twenty-eighth competitor research entry: 300hours' quiz and Eloovor's Culture+Interests blend checked and dismissed, Big 4 thread retired, 27th straight blank
+
+Daily research routine's entry for 2026-09-28 (27th entry actually filed in the ledger):
+`overall/research/2026-09-28-competitor-analysis.md`. Delegated to a sub-agent briefed on the two
+standing moat questions and ~150 already-logged names; ran 19 fresh search angles including the
+one permitted retry on an *external, candidate-facing* Big 4 service-line quiz (distinct from the
+internal-staffing angle tried ~8 times before). `WebFetch` tested once against
+`careerexplorer.com` per updated brief guidance; failed immediately with `EGRESS_BLOCKED` (9th
+consecutive day), so findings rest on `WebSearch` only. No genuinely new competitor closed either
+moat question; checked and dismissed 300hours.com's 4-bucket finance quiz, ElevateAI and Eloovor
+(per-posting resume-fit tools; Eloovor notable only for blending "Culture/Interests" into its
+single score without separating it as an axis), and WorkUp (video-listing/auto-apply platform).
+The external-facing Big 4 angle also came back empty, closing out that search thread —
+recommended retiring it in favor of moving the licensing idea to business-development discussion.
+Both moat questions blank for the 27th consecutive day. Updated `overall/research/ledger.html`
+(27 entries filed) — first publish attempt refused (hadn't viewed the live version this session);
+read the full live artifact via the saved local copy the refusal provided (not the barred Artifact
+`read` action, not Bash), confirmed it was identical to the repo's pre-edit state with no
+out-of-band edits, then published — first retry refused as identical-content, second retry
+succeeded (Version 10), consistent with the recurring resolution pattern. No BASE_IDEA.md
+regression found. Repo hygiene: session started with `HEAD` detached at `origin/main`'s tip
+(local `main` four commits behind) — same recurring pattern flagged 2026-09-18 through 2026-09-27;
+fast-forwarded local `main` to match, no data at risk.
+
 ## 2026-09-27 — Twenty-seventh competitor research entry: Careerspan, JoeDHJ's evidence-bucket taxonomy, a new Big 4 licensing idea, 26th straight blank
 
 Daily research routine's entry for 2026-09-27 (26th entry actually filed in the ledger):
