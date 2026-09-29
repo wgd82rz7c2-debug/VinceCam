@@ -4,6 +4,27 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-29 — Twenty-ninth competitor research entry: Pathwise's single Interview Readiness Index and Wisedoc's trajectory-by-location Sankey checked and dismissed, 28th straight blank
+
+Daily research routine's entry for 2026-09-29 (28th entry actually filed in the ledger):
+`overall/research/2026-09-29-competitor-analysis.md`. Delegated to a sub-agent briefed on the two
+standing moat questions and ~130 already-logged names; `WebFetch` tested once against
+`aipathwise.com` per the now-standard practice of not retrying every day, failed immediately with
+`EGRESS_BLOCKED` (at least the 10th consecutive day), so findings rest on `WebSearch` only. No
+genuinely new competitor closed either moat question; checked and dismissed Pathwise (a Big-4-
+flavored mentor-led readiness platform gating real interviews behind a single numeric "Interview
+Readiness Index," the closest finance/Big-4-adjacent tool found in weeks but still one blended
+score with no separated axes), Wisedoc (a career-center platform visualizing trajectory-by-
+location-and-pay as a Sankey diagram — a useful presentation idea, still blended and non-finance-
+specific), and Profiled (a minor competence-only per-posting verdict tool). Both moat questions
+blank for the 28th consecutive day. Updated `overall/research/ledger.html` (28 entries filed) —
+first publish attempt refused (hadn't viewed the live version this session); read the full live
+artifact via the saved local copy the refusal provided (not the barred Artifact `read` action, not
+Bash), confirmed it was identical to the repo's pre-edit 27-entry state with no out-of-band edits,
+then republished — first retry refused as identical-content, second retry succeeded (Version 11),
+consistent with the recurring resolution pattern. No BASE_IDEA.md regression found — read in full,
+all 86 sections.
+
 ## 2026-09-28 — Twenty-eighth competitor research entry: 300hours' quiz and Eloovor's Culture+Interests blend checked and dismissed, Big 4 thread retired, 27th straight blank
 
 Daily research routine's entry for 2026-09-28 (27th entry actually filed in the ledger):
