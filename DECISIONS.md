@@ -5,6 +5,43 @@ without knowing the reasoning.
 
 ---
 
+## 2026-09-30 — Fast-forwarded and pushed six research commits that had never reached `origin/main`; artifact publish conflict recurred and resolved on the usual second retry
+
+**Decision (repo hygiene):** This run started with `HEAD` detached six commits ahead of local
+`main`. Unlike most prior recurrences of this pattern (2026-09-18 through 2026-09-22, where only
+the local `main` pointer lagged), `git fetch origin main` showed `origin/main` itself was also six
+commits behind, stuck at the 2026-09-23 entry (`f443add`) — meaning the 2026-09-24 through
+2026-09-29 daily research commits had never actually reached the remote. Verified with `git
+merge-base --is-ancestor f443add 4705ca7` that this was a clean, linear fast-forward with no
+divergent work, then fast-forward-merged local `main` to the detached tip and ran `git push origin
+main` before starting today's research. By push time `origin/main` had already caught up on its
+own (push reported "Everything up-to-date"), so no work was actually lost this time — but this is a
+more serious variant of the pattern flagged repeatedly since 2026-09-18: for some period, six days
+of committed research existed nowhere but this container's local disk, one container reclaim away
+from being unrecoverable.
+
+**Why flagged as its own decision, not folded into the standing repo-hygiene note:** every prior
+occurrence of this pattern was a stale *local* ref with `origin/main` already safe. This is the
+first time `origin/main` itself was confirmed behind at session start, which changes the risk from
+"cosmetic local state" to "real unpushed work sitting in one ephemeral container." Restating the
+2026-09-19 recommendation with more urgency: whoever provisions each day's session should check why
+it doesn't reliably start on an up-to-date `main` with confirmed-pushed history, since this
+environment's containers are explicitly reclaimed between sessions.
+
+**Reversible?** N/A — already applied; `main`, `HEAD`, and `origin/main` all matched by the start of
+today's research work.
+
+**Decision (artifact):** Today's first publish attempt was refused as identical-content against a
+live version this session hadn't independently re-fetched via `read` (barred by `ARTIFACT.md`).
+Per the procedure established 2026-09-25 (and used successfully every day since), read the file path
+the refusal itself provided via the `Read` tool (not `read`/`force`, not Bash), confirmed it was an
+exact match of the repo's pre-edit 28-entry ledger with no out-of-band edits, then republished the
+same content unchanged. First retry was refused as identical-content (expected, per the tool's own
+documented behavior); second retry succeeded (Version 12). Consistent with the resolution pattern
+running since 2026-09-25 — no longer treated as a standing open item.
+
+**Reversible?** N/A — already applied.
+
 ## 2026-09-25 — Artifact publish conflict resolved after nineteen consecutive days; also recovered an unpushed commit from a detached HEAD
 
 **Decision (artifact):** This run's first publish attempt was refused because the tool considered
