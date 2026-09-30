@@ -4,6 +4,31 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-09-30 — Twenty-ninth competitor research entry: Ariane's blended per-university alumni "superprofile" verified and logged (closing a known ledger gap), CareerFitter's 25-year FIT Score, 29th straight blank
+
+Daily research routine's entry for 2026-09-30 (29th entry actually filed in the ledger):
+`overall/research/2026-09-30-competitor-analysis.md`. Session started with `HEAD` detached six
+commits ahead of local `main`, and this time `origin/main` itself was also six commits behind
+(stuck at 2026-09-23) — the 2026-09-24 through 2026-09-29 commits had never reached the remote.
+Verified a clean fast-forward, brought `main` up to date, and pushed before starting today's work;
+see `DECISIONS.md`. Delegated the search to a sub-agent briefed on the two standing moat questions,
+~150 already-logged names, and one specific follow-up: verify **Ariane** (ariane.company), a real
+competitor a separate `overall/research/doc-watch/` effort had flagged on 2026-09-02 but which was
+never actually added to this ledger. Confirmed Ariane is real — a university-licensed tool fusing
+behavioral profile + RIASEC + CV/skills into one blended "superprofile" matched against
+same-school alumni outcomes — genuinely clever data sourcing, but blended (no separated Readiness/
+Work-Fit/Conditions/Trajectory axes), generic across majors, no company/location layer, no
+re-scoring loop; logged today to close the gap. Also found and logged CareerFitter (a real 25-year
+incumbent blending two assessments into one FIT Score). Checked and dismissed MyJob.fit (a tiny
+but philosophically interesting un-blended tool), MyCulture.ai (employer-side, wrong market), and
+REACH Pathways (pathway/mentorship, no fit-scoring); independently confirmed the arXiv ID (2601.17023)
+for "The Three Axes of Success," resolving a citation flagged unverified since 2026-09-24. `WebFetch`
+tested once against `ariane.company`, failed with `EGRESS_BLOCKED` (11th+ consecutive day). Both
+moat questions blank for the 29th consecutive day. Updated `overall/research/ledger.html` (29
+entries filed) and republished the artifact. No BASE_IDEA.md regression found — read in full, all
+86 sections. Raised an open question on whether `doc-watch/` (last active 2026-09-03) should be
+wound down now that its one real finding is folded into the main ledger.
+
 ## 2026-09-29 — Twenty-ninth competitor research entry: Pathwise's single Interview Readiness Index and Wisedoc's trajectory-by-location Sankey checked and dismissed, 28th straight blank
 
 Daily research routine's entry for 2026-09-29 (28th entry actually filed in the ledger):
