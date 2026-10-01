@@ -4,6 +4,33 @@ Newest entry at the top. Short entries: what changed, what it revealed, what's n
 
 ---
 
+## 2026-10-01 — Thirtieth competitor research entry: JobSingha's finance-wide (not sub-career) Fit Score and JobRooster's student-driven company ranking checked and dismissed, 30th straight blank
+
+Daily research routine's entry for 2026-10-01 (30th entry actually filed in the ledger):
+`overall/research/2026-10-01-competitor-analysis.md`. Delegated the search to a sub-agent briefed
+on the two standing moat questions and the full ~150+ already-logged name roster (read directly
+from `ledger.html`). `WebFetch` tested once against `careerexplorer.com`, failed immediately with
+`EGRESS_BLOCKED` (12th+ consecutive day; proxy status again showed zero relay failures). Findings
+rest on `WebSearch` only. Checked and dismissed JobSingha (a Singapore finance-exclusive job board
+whose single 0–10 Fit Score spans all of finance undifferentiated by sub-career — the sharpest
+live illustration yet of §21's "Financial Analyst is not one career" applied to a whole vertical),
+JobRooster (a tiny HKTECH300 student project letting peers rank companies on culture/workload —
+generic, un-scored, but a second data point after Wisedoc that students want company-comparison
+signal), Rezmatch.ai (an explainable "receipt"-style resume-match API — citable evidence-linked-
+scoring precedent, not finance-specific), VMock Career Fit (a resume-iterate-and-rescore loop —
+the closest re-scoring mechanism found in 30 days, but rescores editing quality, not lived work
+experience), and InsideIIM's five-domain fitment report (same shallow-bucket shape as prior quiz
+tools). Also checked and dismissed Wonderlic's incremental scoring-profile update (same scoring,
+confirmed by its own docs) and Finni (Australian job board, wrong geography). Both moat questions
+blank for the 30th consecutive day. Updated `overall/research/ledger.html` (30 entries filed) —
+first publish attempt refused (hadn't viewed the live version this session); read the full live
+artifact via the saved local copy the refusal provided (not the barred Artifact `read` action, not
+Bash), confirmed it was identical to the repo's pre-edit 29-entry state with no out-of-band edits,
+then republished — first retry refused as identical-content, second retry succeeded (Version 13),
+consistent with the recurring resolution pattern. No BASE_IDEA.md regression found — read in full.
+Repo was clean on start (up to date with `origin/main`, no detached HEAD) for the first time in
+several runs.
+
 ## 2026-09-30 — Twenty-ninth competitor research entry: Ariane's blended per-university alumni "superprofile" verified and logged (closing a known ledger gap), CareerFitter's 25-year FIT Score, 29th straight blank
 
 Daily research routine's entry for 2026-09-30 (29th entry actually filed in the ledger):
